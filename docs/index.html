@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Uma ficha só com fontes primárias, com as mesmas perguntas para os dois candidatos. Ela não recomenda voto e não usa adjetivos. Cada proposta traz a página do plano de governo registrado no TSE,…">
+<meta property="og:title" content="Ficha do 2º Turno 2026">
+<meta property="og:description" content="Uma ficha só com fontes primárias, com as mesmas perguntas para os dois candidatos. Ela não recomenda voto e não usa adjetivos. Cada proposta traz a página do plano de governo registrado no TSE,…">
+<meta property="og:type" content="article">
+<title>Ficha do 2º Turno 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,650&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: uma coluna de leitura; os dois candidatos sempre lado a lado com a MESMA estrutura (empilham no celular). Cor neutra de propósito: nada de cor de partido. */
+:root {
+  --bg: #f6f7f6;
+  --surface: #ffffff;
+  --ink: #16191a;
+  --muted: #586064;
+  --line: #d9dedc;
+  --accent: #2f5b5f;
+  --accent-soft: #e3eeee;
+  --warn-bg: #fbf4e2;
+  --warn-ink: #6b4b00;
+  --ok-bg: #e2f0ea; --ok-ink: #1d5a40;
+  --no-bg: #f6e4e4; --no-ink: #7a2a2a;
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100;
+  --f-display: "Literata", Georgia, "Times New Roman", serif;
+  --f-body: "Public Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  --f-mono: "IBM Plex Mono", Consolas, "Courier New", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141716; --surface: #1c2021; --ink: #eef1f0; --muted: #a6afb2; --line: #343b3d;
+    --accent: #8cc3c6; --accent-soft: #23393b; --warn-bg: #33290f; --warn-ink: #f0d48a;
+    --ok-bg: #173327; --ok-ink: #9fd9bd; --no-bg: #3a1e1e; --no-ink: #f0b3b3;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141716; --surface: #1c2021; --ink: #eef1f0; --muted: #a6afb2; --line: #343b3d;
+  --accent: #8cc3c6; --accent-soft: #23393b; --warn-bg: #33290f; --warn-ink: #f0d48a;
+  --ok-bg: #173327; --ok-ink: #9fd9bd; --no-bg: #3a1e1e; --no-ink: #f0b3b3;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.55; }
+.wrap { max-width: 1060px; margin: 0 auto; padding-inline: 18px; padding-block: 28px 64px; display: grid; gap: 44px; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 650; text-wrap: balance; margin: 0; line-height: 1.2; }
+h1 { font-size: clamp(1.9rem, 4.6vw, 2.8rem); letter-spacing: -0.01em; }
+h2 { font-size: clamp(1.35rem, 3vw, 1.7rem); }
+h3 { font-size: 1.08rem; font-family: var(--f-body); font-weight: 700; }
+p { margin: 0; }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.eyebrow { font-family: var(--f-mono); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.lede { max-width: 64ch; color: var(--muted); font-size: 1.04rem; }
+.mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+section { display: grid; gap: 18px; }
+.sec-head { display: grid; gap: 6px; border-top: 1px solid var(--line); padding-top: 22px; }
+.sec-head p { max-width: 68ch; color: var(--muted); }
+
+/* topo */
+header.top { display: grid; gap: 14px; }
+.stamp { display: flex; flex-wrap: wrap; gap: 8px 18px; font-family: var(--f-mono); font-size: .8rem; color: var(--muted); }
+nav.toc { display: flex; flex-wrap: wrap; gap: 8px; }
+nav.toc a { font-size: .86rem; text-decoration: none; border: 1px solid var(--line); background: var(--surface); padding: 5px 11px; border-radius: 999px; color: var(--ink); }
+nav.toc a:hover { border-color: var(--accent); }
+
+/* legenda de leitura */
+.howto { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.howto div { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; display: grid; gap: 4px; }
+.howto b { font-size: .92rem; }
+.howto span { color: var(--muted); font-size: .9rem; }
+
+/* dois lados */
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.pair > * { min-width: 0; }
+.cand-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: grid; gap: 12px; align-content: start; }
+.cand-name { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.cand-name h3 { font-family: var(--f-display); font-size: 1.3rem; font-weight: 650; }
+.num { font-family: var(--f-mono); font-size: 1.5rem; color: var(--muted); }
+dl.facts { display: grid; grid-template-columns: minmax(110px, 38%) 1fr; gap: 6px 12px; margin: 0; font-size: .94rem; }
+dl.facts dt { color: var(--muted); }
+dl.facts dd { margin: 0; min-width: 0; }
+ul.plain { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.note { background: var(--accent-soft); border-radius: 8px; padding: 12px 14px; font-size: .94rem; max-width: 80ch; }
+.caveat { background: var(--warn-bg); color: var(--warn-ink); border-radius: 8px; padding: 12px 14px; font-size: .94rem; }
+
+/* bens */
+.big { font-family: var(--f-mono); font-variant-numeric: tabular-nums; font-size: 1.6rem; font-weight: 500; }
+.small { font-size: .88rem; color: var(--muted); }
+
+/* gráfico de receitas */
+.chart { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: grid; gap: 16px; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: .88rem; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.bar-row { display: grid; grid-template-columns: 120px 1fr; gap: 12px; align-items: center; }
+.bar-row .lbl { font-weight: 600; font-size: .95rem; }
+.bar-row .lbl small { display: block; font-weight: 400; color: var(--muted); font-family: var(--f-mono); font-size: .78rem; }
+.bar { display: flex; gap: 2px; height: 26px; }
+.bar i { display: block; height: 100%; min-width: 2px; }
+.bar i:first-child { border-radius: 4px 0 0 4px; }
+.bar i:last-child { border-radius: 0 4px 4px 0; }
+.axis { display: grid; grid-template-columns: 120px 1fr; gap: 12px; font-family: var(--f-mono); font-size: .74rem; color: var(--muted); }
+.axis div { display: flex; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 4px; }
+.tbl-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .9rem; min-width: 520px; }
+th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); }
+td.n, th.n { text-align: right; font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+th { font-weight: 600; color: var(--muted); font-size: .82rem; }
+
+/* propostas */
+.tags-key { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.tags-key div { display: grid; gap: 4px; font-size: .88rem; color: var(--muted); }
+.tag { display: inline-block; font-family: var(--f-mono); font-size: .72rem; letter-spacing: .03em; padding: 2px 7px; border-radius: 4px; border: 1px solid var(--line); color: var(--ink); background: var(--bg); white-space: nowrap; }
+.tag.pec { border-color: var(--accent); color: var(--accent); }
+.theme { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.theme > summary { list-style: none; cursor: pointer; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.theme > summary::-webkit-details-marker { display: none; }
+.theme > summary h3 { font-family: var(--f-display); font-size: 1.15rem; font-weight: 650; }
+.theme > summary .chev { font-family: var(--f-mono); color: var(--muted); font-size: .85rem; }
+.theme[open] > summary .chev::after { content: "fechar"; }
+.theme:not([open]) > summary .chev::after { content: "abrir"; }
+.theme-body { border-top: 1px solid var(--line); padding: 16px 18px 18px; display: grid; gap: 14px; }
+.col h4 { margin: 0 0 8px; font-size: .8rem; font-family: var(--f-mono); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+ol.props { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+ol.props li { display: grid; gap: 4px; padding-bottom: 10px; border-bottom: 1px dashed var(--line); }
+ol.props li:last-child { border-bottom: 0; padding-bottom: 0; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.pg { font-family: var(--f-mono); font-size: .76rem; color: var(--muted); margin-right: 2px; }
+.common { font-size: .92rem; background: var(--accent-soft); border-radius: 8px; padding: 10px 12px; }
+.common b { font-weight: 700; }
+
+/* mapa do poder */
+.power { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+.power div { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 6px; align-content: start; }
+.power b { font-size: .98rem; }
+.power p { font-size: .92rem; color: var(--muted); }
+.power .src { font-family: var(--f-mono); font-size: .74rem; }
+
+/* números citados */
+ul.claims { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+ul.claims li { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; display: grid; gap: 4px; font-size: .94rem; }
+.unv { font-family: var(--f-mono); font-size: .72rem; color: var(--warn-ink); background: var(--warn-bg); border-radius: 4px; padding: 1px 6px; justify-self: start; }
+
+/* checagem */
+.st { font-family: var(--f-mono); font-size: .72rem; border-radius: 4px; padding: 2px 7px; justify-self: start; border: 1px solid transparent; }
+.st.ok { background: var(--ok-bg); color: var(--ok-ink); }
+.st.part { background: var(--warn-bg); color: var(--warn-ink); }
+.st.no { background: var(--no-bg); color: var(--no-ink); }
+.st.na { background: var(--bg); color: var(--muted); border-color: var(--line); }
+ul.claims .data { color: var(--muted); font-size: .9rem; }
+ul.claims .q { font-weight: 600; }
+
+/* justiça */
+.gloss { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; }
+.gloss div { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; background: var(--surface); font-size: .9rem; display: grid; gap: 3px; }
+.gloss b { font-size: .95rem; }
+ol.timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; border-left: 2px solid var(--line); padding-left: 14px; }
+ol.timeline li { display: grid; gap: 2px; font-size: .93rem; }
+ol.timeline time { font-family: var(--f-mono); font-size: .76rem; color: var(--muted); }
+.verdict { border-top: 1px solid var(--line); padding-top: 10px; display: grid; gap: 6px; font-size: .93rem; }
+.sides { display: grid; gap: 8px; font-size: .92rem; }
+.sides p { padding-left: 10px; border-left: 3px solid var(--line); }
+
+/* atuação */
+.stat-row { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.stat-row div { display: grid; }
+.stat-row .big { font-size: 1.35rem; }
+
+/* separador entre comparação e explicações */
+.group-label { font-family: var(--f-mono); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 18px; }
+nav.toc a.toc-aux { border-style: dashed; color: var(--muted); }
+
+/* seções recolhíveis */
+.secs { display: grid; }
+details.sec { border-top: 1px solid var(--line); }
+details.sec:last-child { border-bottom: 1px solid var(--line); }
+details.sec > summary { list-style: none; cursor: pointer; display: grid; gap: 5px; padding: 18px 96px 18px 0; position: relative; border-top: 0; }
+details.sec > summary::-webkit-details-marker { display: none; }
+details.sec > summary:hover h2 { color: var(--accent); }
+.teaser { color: var(--muted); max-width: 70ch; font-size: .97rem; }
+.more { position: absolute; right: 0; top: 20px; font-family: var(--f-mono); font-size: .76rem; border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 3px 11px; color: var(--ink); }
+details.sec > summary:hover .more { border-color: var(--accent); color: var(--accent); }
+details.sec:not([open]) > summary .more::after { content: "abrir"; }
+details.sec[open] > summary .more::after { content: "fechar"; }
+.sec-body { display: grid; gap: 18px; padding-bottom: 30px; }
+.sec-desc { color: var(--muted); max-width: 70ch; }
+.toggle-all { justify-self: start; font: inherit; font-size: .86rem; cursor: pointer; background: none; border: 0; color: var(--accent); padding: 0; text-decoration: underline; text-underline-offset: 3px; }
+details.sub { border-top: 1px dashed var(--line); padding-top: 8px; }
+details.sub > summary { cursor: pointer; font-size: .9rem; color: var(--accent); }
+details.sub[open] > summary { margin-bottom: 10px; }
+.wrap { gap: 32px; }
+@media (max-width: 720px) { details.sec > summary { padding-right: 0; padding-top: 44px; } .more { top: 14px; left: 0; right: auto; } }
+
+footer { border-top: 1px solid var(--line); padding-top: 20px; display: grid; gap: 10px; font-size: .9rem; color: var(--muted); }
+footer ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+
+@media (max-width: 720px) {
+  .pair { grid-template-columns: 1fr; }
+  .bar-row, .axis { grid-template-columns: 1fr; gap: 4px; }
+  .axis > span { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+html { scroll-behavior: smooth; }
+
+/* cada seção é um botão só com o título; o resto aparece ao abrir */
+.secs { gap: 10px; }
+details.sec { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+details.sec:last-child { border-bottom: 1px solid var(--line); }
+details.sec > summary { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 16px 18px; border-radius: 12px; }
+details.sec > summary h2 { font-size: clamp(1.15rem, 3.4vw, 1.4rem); }
+details.sec > summary:hover { background: var(--accent-soft); }
+details.sec[open] > summary { border-bottom: 1px solid var(--line); border-radius: 12px 12px 0 0; }
+.icon { flex: none; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); display: grid; place-items: center; font-family: var(--f-mono); font-size: 1.1rem; line-height: 1; color: var(--accent); background: var(--bg); }
+.icon::before { content: "+"; }
+details[open] > summary .icon::before { content: "−"; }
+.sec-body { padding: 16px 18px 20px; gap: 16px; }
+.resumo { font-size: 1.02rem; max-width: 70ch; }
+.group-label { margin-top: 26px; margin-bottom: -2px; }
+.theme > summary .chev, .theme > summary .chev::after { font-size: 1.1rem; }
+.theme[open] > summary .chev::after { content: "−"; }
+.theme:not([open]) > summary .chev::after { content: "+"; }
+.theme > summary .chev { width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); display: grid; place-items: center; color: var(--accent); background: var(--bg); flex: none; }
+details.sub > summary { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; list-style: none; }
+details.sub > summary::-webkit-details-marker { display: none; }
+details.sub > summary::after { content: "+"; margin-left: auto; font-family: var(--f-mono); color: var(--accent); }
+details.sub[open] > summary::after { content: "−"; }
+@media (max-width: 720px) { details.sec > summary { padding: 14px 14px; } .sec-body { padding: 14px 14px 18px; } }
+
+/* subitens: fundo colorido, letra menor e sem moldura; item aberto ganha contorno na cor de destaque */
+details.sec[open] { border-color: var(--accent); }
+details.sec[open] > summary { border-bottom-color: var(--line); }
+.theme, details.sub { background: var(--accent-soft); border: 0; border-radius: 8px; }
+.theme > summary, details.sub > summary { padding: 11px 12px; }
+details.sub { padding: 0; }
+details.sub[open] > summary { margin-bottom: 0; }
+details.sub > :not(summary) { margin: 0 12px 12px; }
+.theme > summary h3 { font-family: var(--f-body); font-size: 1rem; font-weight: 600; }
+.theme > summary .chev { width: 24px; height: 24px; font-size: .95rem; background: var(--surface); border-color: transparent; }
+.theme-body { background: var(--surface); border-top: 0; margin: 0 6px 6px; border-radius: 6px; }
+.theme + .theme { margin-top: 0; }
+
+/* cada candidato numa coluna própria, com faixa de nome; no celular as colunas empilham bem separadas */
+.pair > .col { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.pair > .col > h4 { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 1; border-radius: 9px 9px 0 0; margin: 0; padding: 9px 14px; background: var(--ink); color: var(--bg); font-family: var(--f-body); font-size: .98rem; font-weight: 700; letter-spacing: 0; text-transform: none; }
+.pair > .col > ol.props, .pair > .col > ul.claims { padding: 14px; }
+.theme-body > .pair { gap: 14px; }
+.theme { overflow: visible; }
+@media (max-width: 720px) { .theme-body { padding: 10px; } .pair { gap: 20px; } }
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">Eleição presidencial · 2º turno · 25 de outubro de 2026</p>
+  <h1>Flávio Bolsonaro e Lula, pelos documentos oficiais</h1>
+  <p class="lede">Uma ficha só com fontes primárias, com as mesmas perguntas para os dois candidatos. Ela não recomenda voto e não usa adjetivos. Cada proposta traz a página do plano de governo registrado no TSE, para quem quiser conferir.</p>
+</header>
+
+<main class="secs">
+<details class="sec" id="quem">
+  <summary class="sec-head"><h2 id="h-quem">Quem são</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Fato · TSE</p>
+  <p class="resumo">Flávio, 45 anos, senador pelo RJ (PL). Lula, 81 anos, presidente em exercício (PT).</p>
+  <div class="pair">
+    <article class="cand-card">
+      <div class="cand-name"><h3>Flávio Bolsonaro</h3><span class="num">22</span></div>
+      <dl class="facts">
+        <dt>Partido</dt><dd>PL, sem coligação</dd>
+        <dt>Vice</dt><dd>Alfredo Gaspar de Mendonça Neto (PL)</dd>
+        <dt>Idade no dia 25</dt><dd>45 anos</dd>
+        <dt>Natural de</dt><dd>Resende (RJ)</dd>
+        <dt>Escolaridade</dt><dd>Superior completo</dd>
+        <dt>Ocupação declarada</dt><dd>Senador</dd>
+        <dt>Eleições anteriores<br><span class="small">(base do TSE, de 2006 em diante)</span></dt><dd>
+          <ul class="plain">
+            <li>2018: senador pelo RJ, eleito (PSL)</li>
+            <li>2016: prefeito do Rio, não eleito (PSC)</li>
+            <li>2006, 2010, 2014: deputado estadual no RJ, eleito (PP)</li>
+          </ul></dd>
+        <dt>Registro</dt><dd>Deferido pelo TSE</dd>
+      </dl>
+    </article>
+    <article class="cand-card">
+      <div class="cand-name"><h3>Lula</h3><span class="num">13</span></div>
+      <dl class="facts">
+        <dt>Partido</dt><dd>PT, coligação “Brasil Pronto pra Mais” (PT, PCdoB, PV, PSB, PDT, PSOL, Rede)</dd>
+        <dt>Vice</dt><dd>Geraldo Alckmin (PSB)</dd>
+        <dt>Idade no dia 25</dt><dd>81 anos</dd>
+        <dt>Natural de</dt><dd>Garanhuns (PE)</dd>
+        <dt>Escolaridade</dt><dd>Ensino fundamental completo</dd>
+        <dt>Ocupação declarada</dt><dd>Torneiro mecânico</dd>
+        <dt>Eleições anteriores<br><span class="small">(base do TSE, de 2006 em diante)</span></dt><dd>
+          <ul class="plain">
+            <li>2022: presidente, eleito (PT)</li>
+            <li>2018: pedido de registro para presidente; a base mostra a situação “concorrendo” e não mostra o desfecho</li>
+            <li>2006: presidente, eleito (PT)</li>
+          </ul></dd>
+        <dt>Registro</dt><dd>Deferido pelo TSE</dd>
+      </dl>
+    </article>
+  </div>
+  <p class="note">Os dois estão em posições diferentes. Lula é o presidente em exercício e o plano dele fala sobretudo do que o governo atual fez. Flávio é senador, e o plano dele usa o governo de Jair Bolsonaro (2019–2022) como referência do que já foi feito (“nós já mostramos”, p. 9, 23, 29).</p>
+</div>
+</details>
+
+<details class="sec" id="propostas">
+  <summary class="sec-head"><h2 id="h-prop">Propostas</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Plano de governo registrado no TSE</p>
+  <p class="resumo">Os mesmos 9 temas para os dois, com a página do plano e quem precisa aprovar cada proposta.</p>
+
+  <details class="theme">
+    <summary><h3>Segurança pública</h3><span class="chev"></span></summary>
+    <div class="theme-body">
+      <div class="pair">
+        <div class="col"><h4>Flávio Bolsonaro</h4><ol class="props">
+          <li><p>Classificar PCC, CV e milícias como organizações narcoterroristas.</p><div class="meta"><span class="pg">p. 13</span><span class="tag">Lei</span></div></li>
+          <li><p>Reduzir a maioridade penal de 18 para 16 anos e punir maiores de 14 por crimes graves.</p><div class="meta"><span class="pg">p. 13</span><span class="tag pec">PEC</span></div></li>
+          <li><p>Cinco novos presídios federais de segurança máxima e 500 mil novas vagas prisionais em 4 anos, com os estados.</p><div class="meta"><span class="pg">p. 14</span><span class="tag">Governo</span><span class="tag">Estados e municípios</span></div></li>
+          <li><p>Castração química para condenados por estupro e abuso de crianças.</p><div class="meta"><span class="pg">p. 14</span><span class="tag">Lei</span></div></li>
+          <li><p>Acabar com a progressão de regime para crimes hediondos.</p><div class="meta"><span class="pg">p. 15</span><span class="tag">Lei</span></div></li>
+          <li><p>Dobrar o investimento federal em segurança e instalar 1 milhão de câmeras com reconhecimento facial.</p><div class="meta"><span class="pg">p. 15</span><span class="tag">Governo</span></div></li>
+        </ol></div>
+        <div class="col"><h4>Lula</h4><ol class="props">
+          <li><p>Aprovar a PEC da Segurança Pública, já enviada ao Congresso, e depois criar o Ministério da Segurança Pública.</p><div class="meta"><span class="pg">p. 27, 30</span><span class="tag pec">PEC</span></div></li>
+          <li><p>Continuar cortando o dinheiro do crime organizado, agora com a Lei Antifacção (sancionada em 2026).</p><div class="meta"><span class="pg">p. 27</span><span class="tag">Governo</span></div></li>
+          <li><p>Programa Brasil Contra o Crime Organizado, com R$ 10 bilhões para estados e municípios.</p><div class="meta"><span class="pg">p. 27–28</span><span class="tag">Governo</span><span class="tag">Estados e municípios</span></div></li>
+          <li><p>Manter o controle de armas e munições e ampliar o rastreamento.</p><div class="meta"><span class="pg">p. 28</span><span class="tag">Governo</span></div></li>
+          <li><p>Câmeras corporais nas polícias, com padrão nacional.</p><div class="meta"><span class="pg">p. 30</span><span class="tag">Estados e municípios</span></div></li>
+          <li><p>Ampliar o programa Celular Seguro.</p><div class="meta"><span class="pg">p. 29</span><span class="tag">Governo</span></div></li>
+        </ol></div>
+      </div>
+      <p class="common"><b>Em comum:</b> os dois falam em cortar o dinheiro das facções e em isolar líderes criminosos em presídios federais (Flávio p. 13–14; Lula p. 27–28). <b>Diferença:</b> acesso de civis a armas. Lula quer manter o controle; o plano de Flávio não trata do tema.</p>
+    </div>
+  </details>
+
+  <details class="theme">
+    <summary><h3>Economia, impostos e contas públicas</h3><span class="chev"></span></summary>
+    <div class="theme-body">
+      <div class="pair">
+        <div class="col"><h4>Flávio Bolsonaro</h4><ol class="props">
+          <li><p>Nova regra fiscal voltada a reduzir a dívida pública, com superávits.</p><div class="meta"><span class="pg">p. 71</span><span class="tag">Lei</span></div></li>
+          <li><p>Revisar a reforma tributária aprovada e reduzir o imposto sobre consumo (IVA), que o plano diz estar projetado em cerca de 30%.</p><div class="meta"><span class="pg">p. 30, 71</span><span class="tag">Lei</span><span class="tag pec">PEC</span></div></li>
+          <li><p>Cortar pelo menos 10 ministérios, além de cargos comissionados e supersalários.</p><div class="meta"><span class="pg">p. 69</span><span class="tag">Lei</span></div></li>
+          <li><p>Retomar o programa de privatizações, caso a caso.</p><div class="meta"><span class="pg">p. 70</span><span class="tag">Governo</span><span class="tag">Lei</span></div></li>
+          <li><p>Simplificar a conta de luz e reduzir aos poucos os encargos (CDE).</p><div class="meta"><span class="pg">p. 31</span><span class="tag">Lei</span></div></li>
+          <li><p>Juros básicos na média internacional, como consequência de reduzir a dívida.</p><div class="meta"><span class="pg">p. 33</span><span class="tag">Banco Central</span></div></li>
+        </ol></div>
+        <div class="col"><h4>Lula</h4><ol class="props">
+          <li><p>Manter o arcabouço fiscal, a regra de gastos aprovada em 2023.</p><div class="meta"><span class="pg">p. 49</span><span class="tag">Governo</span></div></li>
+          <li><p>Criar condições para os juros caírem de forma duradoura, com inflação controlada.</p><div class="meta"><span class="pg">p. 49</span><span class="tag">Banco Central</span></div></li>
+          <li><p>Regulamentar o Fundo Nacional de Desenvolvimento Regional, criado pela reforma tributária.</p><div class="meta"><span class="pg">p. 56</span><span class="tag">Lei</span></div></li>
+          <li><p>Usar o Imposto Seletivo para desestimular produtos que fazem mal à saúde.</p><div class="meta"><span class="pg">p. 59</span><span class="tag">Lei</span></div></li>
+          <li><p>Petrobras voltar a distribuir combustíveis e ampliar o refino.</p><div class="meta"><span class="pg">p. 67</span><span class="tag">Governo</span></div></li>
+          <li><p>Continuar a política industrial Nova Indústria Brasil, com foco em inovação, IA e minerais críticos.</p><div class="meta"><span class="pg">p. 50</span><span class="tag">Governo</span></div></li>
+        </ol></div>
+      </div>
+      <p class="common"><b>Em comum:</b> os dois prometem juros menores, mas nenhum presidente decide os juros (veja <a href="#poder">Quem decide o quê</a>). Os dois falam em agregar valor aos minerais críticos no Brasil (Flávio p. 55; Lula p. 52). <b>Diferença:</b> Flávio quer refazer a regra fiscal e revisar a reforma tributária; Lula quer manter as duas.</p>
+    </div>
+  </details>
+
+  <details class="theme">
+    <summary><h3>Programas sociais e moradia</h3><span class="chev"></span></summary>
+    <div class="theme-body">
+      <div class="pair">
+        <div class="col"><h4>Flávio Bolsonaro</h4><ol class="props">
+          <li><p>Manter os programas sociais existentes, com combate a fraudes.</p><div class="meta"><span class="pg">p. 42</span><span class="tag">Governo</span></div></li>
+          <li><p>Prioridade de emprego e qualificação para quem recebe benefício, e volta sem fila ao benefício depois do seguro-desemprego.</p><div class="meta"><span class="pg">p. 43</span><span class="tag">Governo</span></div></li>
+          <li><p>Proibir o uso de dinheiro de programas sociais em apostas online.</p><div class="meta"><span class="pg">p. 33</span><span class="tag">Lei</span></div></li>
+          <li><p>Retomar o Casa Verde e Amarela, com meta de 2,5 milhões de moradias.</p><div class="meta"><span class="pg">p. 47</span><span class="tag">Governo</span></div></li>
+          <li><p>Voucher para creche particular onde faltar vaga pública.</p><div class="meta"><span class="pg">p. 21</span><span class="tag">Lei</span><span class="tag">Estados e municípios</span></div></li>
+          <li><p>“Ganha, Ganha”: boas atitudes financeiras viram pontos, trocados por juros menores e cashback na CAIXA.</p><div class="meta"><span class="pg">p. 19, 46</span><span class="tag">Governo</span></div></li>
+        </ol></div>
+        <div class="col"><h4>Lula</h4><ol class="props">
+          <li><p>Manter e ampliar o Bolsa Família.</p><div class="meta"><span class="pg">p. 18–19</span><span class="tag">Governo</span></div></li>
+          <li><p>Manter o aumento real do salário mínimo todo ano.</p><div class="meta"><span class="pg">p. 74</span><span class="tag">Governo</span></div></li>
+          <li><p>Manter e ampliar o Minha Casa Minha Vida para todas as faixas de renda.</p><div class="meta"><span class="pg">p. 45</span><span class="tag">Governo</span></div></li>
+          <li><p>Política Nacional de Cuidados: espaços para crianças de 3 a 12 anos, lavanderias públicas, cozinhas solidárias.</p><div class="meta"><span class="pg">p. 26</span><span class="tag">Governo</span><span class="tag">Estados e municípios</span></div></li>
+          <li><p>Ampliar centros-dia e o atendimento de idosos em casa.</p><div class="meta"><span class="pg">p. 22</span><span class="tag">Governo</span><span class="tag">Estados e municípios</span></div></li>
+        </ol></div>
+      </div>
+      <p class="common"><b>Em comum:</b> os dois prometem manter os programas sociais, ampliar programas de moradia e criar uma rede de cuidado para idosos e pessoas com deficiência, com mais vagas em instituições de longa permanência (Flávio p. 21, 39; Lula p. 22, 25–26).</p>
+    </div>
+  </details>
+
+  <details class="theme">
+    <summary><h3>Saúde</h3><span class="chev"></span></summary>
+    <div class="theme-body">
+      <div class="pair">
+        <div class="col"><h4>Flávio Bolsonaro</h4><ol class="props">
+          <li><p>Prontuário eletrônico único ligado ao CPF, valendo nas redes pública e privada.</p><div class="meta"><span class="pg">p. 26</span><span class="tag">Governo</span></div></li>
+          <li><p>Corrigir a tabela de pagamento do SUS a hospitais e clínicas.</p><div class="meta"><span class="pg">p. 37</span><span class="tag">Governo</span></div></li>
+          <li><p>Comprar exames da rede privada nos horários em que os aparelhos ficam parados.</p><div class="meta"><span class="pg">p. 37</span><span class="tag">Governo</span></div></li>
+          <li><p>Entregar remédios em casa para idosos, pessoas com deficiência e doentes crônicos.</p><div class="meta"><span class="pg">p. 38</span><span class="tag">Governo</span></div></li>
+          <li><p>Marcação de consultas e exames com inteligência artificial.</p><div class="meta"><span class="pg">p. 26</span><span class="tag">Governo</span></div></li>
+        </ol></div>
+        <div class="col"><h4>Lula</h4><ol class="props">
+          <li><p>Ampliar o Agora Tem Especialistas: terceiro turno, carretas da saúde e parceria com hospitais privados.</p><div class="meta"><span class="pg">p. 37</span><span class="tag">Governo</span></div></li>
+          <li><p>Farmácia Popular 100% gratuita, passando a incluir exames de laboratório.</p><div class="meta"><span class="pg">p. 36</span><span class="tag">Governo</span></div></li>
+          <li><p>Prontuário único pela Rede Nacional de Dados em Saúde.</p><div class="meta"><span class="pg">p. 35</span><span class="tag">Governo</span></div></li>
+          <li><p>Fila única digital, ordenada pela gravidade de cada caso.</p><div class="meta"><span class="pg">p. 38</span><span class="tag">Governo</span><span class="tag">Estados e municípios</span></div></li>
+          <li><p>Ampliar a rede pública de tratamento do câncer e o diagnóstico à distância.</p><div class="meta"><span class="pg">p. 38</span><span class="tag">Governo</span></div></li>
+        </ol></div>
+      </div>
+      <p class="common"><b>Em comum:</b> prontuário único, uso da rede privada para reduzir filas e inteligência artificial na marcação e na triagem aparecem nos dois planos (Flávio p. 26, 37; Lula p. 35, 37–38).</p>
+    </div>
+  </details>
+
+  <details class="theme">
+    <summary><h3>Educação</h3><span class="chev"></span></summary>
+    <div class="theme-body">
+      <div class="pair">
+        <div class="col"><h4>Flávio Bolsonaro</h4><ol class="props">
+          <li><p>Alfabetizar pelo método fônico.</p><div class="meta"><span class="pg">p. 35</span><span class="tag">Estados e municípios</span></div></li>
+          <li><p>Ampliar as escolas cívico-militares.</p><div class="meta"><span class="pg">p. 35</span><span class="tag">Governo</span><span class="tag">Estados e municípios</span></div></li>
+          <li><p>Repasses federais ligados a metas de aprendizagem.</p><div class="meta"><span class="pg">p. 35</span><span class="tag">Lei</span></div></li>
+          <li><p>Voucher para escola particular onde faltar vaga pública.</p><div class="meta"><span class="pg">p. 36</span><span class="tag">Lei</span><span class="tag">Estados e municípios</span></div></li>
+          <li><p>Passar o ensino superior para o Ministério da Ciência e Tecnologia.</p><div class="meta"><span class="pg">p. 36</span><span class="tag">Lei</span></div></li>
+          <li><p>Trocar o modelo do FIES por um empréstimo pago só depois do emprego, conforme a renda.</p><div class="meta"><span class="pg">p. 37</span><span class="tag">Lei</span></div></li>
+        </ol></div>
+        <div class="col"><h4>Lula</h4><ol class="props">
+          <li><p>Chegar a 80% das crianças alfabetizadas na idade certa (o plano diz que foram 66% em 2025).</p><div class="meta"><span class="pg">p. 31</span><span class="tag">Estados e municípios</span></div></li>
+          <li><p>Manter e fortalecer o Pé-de-Meia, a poupança para o aluno do ensino médio não largar a escola.</p><div class="meta"><span class="pg">p. 32</span><span class="tag">Governo</span></div></li>
+          <li><p>Ampliar a escola em tempo integral, agora com dinheiro do Fundeb.</p><div class="meta"><span class="pg">p. 31</span><span class="tag">Estados e municípios</span></div></li>
+          <li><p>Levar internet de qualidade a todas as escolas.</p><div class="meta"><span class="pg">p. 32</span><span class="tag">Governo</span><span class="tag">Estados e municípios</span></div></li>
+          <li><p>Novos institutos federais e mais universidades públicas no interior.</p><div class="meta"><span class="pg">p. 33</span><span class="tag">Governo</span></div></li>
+        </ol></div>
+      </div>
+      <p class="common"><b>Em comum:</b> escola em tempo integral e internet nas escolas (Flávio p. 24, 35; Lula p. 31–32). <b>Diferença:</b> Flávio propõe vouchers para a rede particular e escolas cívico-militares; o plano de Lula não trata desses dois pontos.</p>
+    </div>
+  </details>
+
+  <details class="theme">
+    <summary><h3>Trabalho</h3><span class="chev"></span></summary>
+    <div class="theme-body">
+      <div class="pair">
+        <div class="col"><h4>Flávio Bolsonaro</h4><ol class="props">
+          <li><p>Contrato com custo menor para o primeiro emprego (18 a 24 anos) e para quem tem 50 anos ou mais e está desempregado há 12 meses.</p><div class="meta"><span class="pg">p. 43–44</span><span class="tag">Lei</span></div></li>
+          <li><p>Reduzir aos poucos o custo do emprego formal “sem retirar direitos”.</p><div class="meta"><span class="pg">p. 43</span><span class="tag">Lei</span></div></li>
+          <li><p>Ampliar o acordo direto entre empresa e trabalhador acima da lei (“negociado sobre o legislado”) e a jornada flexível.</p><div class="meta"><span class="pg">p. 44</span><span class="tag">Lei</span></div></li>
+          <li><p>Proteger o trabalhador de aplicativo sem dar papel central aos sindicatos.</p><div class="meta"><span class="pg">p. 45</span><span class="tag">Lei</span></div></li>
+          <li><p>Banco nacional de vagas ligado ao RH das empresas.</p><div class="meta"><span class="pg">p. 44</span><span class="tag">Governo</span></div></li>
+        </ol></div>
+        <div class="col"><h4>Lula</h4><ol class="props">
+          <li><p>Acabar com a escala 6x1 e reduzir a jornada para 40 horas sem cortar salário, “nos termos aprovados na Câmara”.</p><div class="meta"><span class="pg">p. 75</span><span class="tag pec">PEC</span></div></li>
+          <li><p>Regras para o trabalho por aplicativo, incluindo previdência.</p><div class="meta"><span class="pg">p. 75, 77</span><span class="tag">Lei</span></div></li>
+          <li><p>Volta da assistência do sindicato na rescisão do contrato.</p><div class="meta"><span class="pg">p. 75</span><span class="tag">Lei</span></div></li>
+          <li><p>Planos obrigatórios para reduzir a diferença de salário entre homens e mulheres nas empresas.</p><div class="meta"><span class="pg">p. 75</span><span class="tag">Lei</span></div></li>
+          <li><p>Plataforma pública de empregos com inteligência artificial no SINE.</p><div class="meta"><span class="pg">p. 74</span><span class="tag">Governo</span></div></li>
+        </ol></div>
+      </div>
+      <p class="common"><b>Em comum:</b> plataforma nacional de vagas e regras para o trabalho por aplicativo. <b>Diferença:</b> o papel dos sindicatos. Flávio quer reduzir (p. 44–45); Lula quer ampliar (p. 75–76).</p>
+    </div>
+  </details>
+
+  <details class="theme">
+    <summary><h3>Meio ambiente e energia</h3><span class="chev"></span></summary>
+    <div class="theme-body">
+      <div class="pair">
+        <div class="col"><h4>Flávio Bolsonaro</h4><ol class="props">
+          <li><p>Zerar o desmatamento <b>ilegal</b> até 2029.</p><div class="meta"><span class="pg">p. 58</span><span class="tag">Governo</span><span class="tag">Estados e municípios</span></div></li>
+          <li><p>Licença ambiental concedida automaticamente se o órgão não decidir no prazo.</p><div class="meta"><span class="pg">p. 50</span><span class="tag">Lei</span></div></li>
+          <li><p>Permitir a exploração de gás de xisto (fracking).</p><div class="meta"><span class="pg">p. 52</span><span class="tag">Governo</span></div></li>
+          <li><p>Acabar com sobreposições entre Ibama, Funai e ICMBio.</p><div class="meta"><span class="pg">p. 59</span><span class="tag">Lei</span></div></li>
+          <li><p>Exigir transparência sobre quem financia ONGs que recebem dinheiro do exterior.</p><div class="meta"><span class="pg">p. 59</span><span class="tag">Lei</span></div></li>
+          <li><p>Dar a indígenas e quilombolas autonomia para decidir atividades produtivas em suas terras.</p><div class="meta"><span class="pg">p. 50</span><span class="tag">Lei</span><span class="tag pec">PEC</span></div></li>
+        </ol></div>
+        <div class="col"><h4>Lula</h4><ol class="props">
+          <li><p>Zerar o desmatamento <b>líquido</b> até 2030.</p><div class="meta"><span class="pg">p. 70</span><span class="tag">Governo</span><span class="tag">Estados e municípios</span></div></li>
+          <li><p>Destinar terras públicas a unidades de conservação, terras indígenas, quilombos e assentamentos.</p><div class="meta"><span class="pg">p. 70</span><span class="tag">Governo</span></div></li>
+          <li><p>Petrobras ampliar a exploração de petróleo em terra e no mar, inclusive em novas reservas.</p><div class="meta"><span class="pg">p. 67</span><span class="tag">Governo</span></div></li>
+          <li><p>Cumprir a meta climática: cortar de 59% a 67% das emissões até 2035, em relação a 2005.</p><div class="meta"><span class="pg">p. 69</span><span class="tag">Governo</span><span class="tag">Estados e municípios</span></div></li>
+          <li><p>Investir em baterias para armazenar energia e em linhas de transmissão.</p><div class="meta"><span class="pg">p. 65</span><span class="tag">Governo</span></div></li>
+        </ol></div>
+      </div>
+      <p class="common"><b>Atenção às metas de desmatamento:</b> elas medem coisas diferentes. “Ilegal zero” mira só o desmatamento sem autorização. “Líquido zero” desconta o que é reflorestado e inclui o desmatamento legal. Por isso as duas metas não se comparam diretamente. <b>Em comum:</b> biocombustíveis, mercado de carbono e armazenamento de energia em baterias (Flávio p. 53, 57; Lula p. 65, 68, 70).</p>
+    </div>
+  </details>
+
+  <details class="theme">
+    <summary><h3>Instituições, Justiça e redes sociais</h3><span class="chev"></span></summary>
+    <div class="theme-body">
+      <div class="pair">
+        <div class="col"><h4>Flávio Bolsonaro</h4><ol class="props">
+          <li><p>Tirar do STF o julgamento criminal de parlamentares e limitar as decisões individuais de ministros.</p><div class="meta"><span class="pg">p. 65</span><span class="tag pec">PEC</span></div></li>
+          <li><p>Quarentena de 1 ano para ministro de Estado ser indicado ao STF; parentes de ministros impedidos de advogar no tribunal.</p><div class="meta"><span class="pg">p. 65–66</span><span class="tag pec">PEC</span></div></li>
+          <li><p>Fim da reeleição para presidente (há uma PEC do próprio Flávio no Senado).</p><div class="meta"><span class="pg">p. 66</span><span class="tag pec">PEC</span></div></li>
+          <li><p>Acabar com estruturas do governo que classifiquem falas como desinformação e revogar atos do governo atual nesse sentido.</p><div class="meta"><span class="pg">p. 66–67</span><span class="tag">Governo</span></div></li>
+          <li><p>Mais transparência e rastreamento das emendas parlamentares.</p><div class="meta"><span class="pg">p. 69</span><span class="tag">Lei</span></div></li>
+        </ol></div>
+        <div class="col"><h4>Lula</h4><ol class="props">
+          <li><p>Rever o sistema de emendas parlamentares (R$ 50 bilhões em 2026, segundo o plano).</p><div class="meta"><span class="pg">p. 15–16</span><span class="tag">Lei</span><span class="tag pec">PEC</span></div></li>
+          <li><p>Regular redes sociais e plataformas contra desinformação e campanhas de ódio.</p><div class="meta"><span class="pg">p. 16</span><span class="tag">Lei</span></div></li>
+          <li><p>Reforma política e eleitoral.</p><div class="meta"><span class="pg">p. 15</span><span class="tag">Lei</span><span class="tag pec">PEC</span></div></li>
+          <li><p>Conselho Nacional pela Soberania Digital e uma política nacional de letramento digital.</p><div class="meta"><span class="pg">p. 17</span><span class="tag">Governo</span></div></li>
+          <li><p>Aprofundar o Plano de Integridade e Combate à Corrupção 2025–2027.</p><div class="meta"><span class="pg">p. 18</span><span class="tag">Governo</span></div></li>
+        </ol></div>
+      </div>
+      <p class="common"><b>Em comum:</b> os dois tratam as emendas parlamentares como problema e falam em reforma política. <b>Diferença:</b> redes sociais. Lula quer regulá-las; Flávio quer acabar com o que o plano chama de “Ministério da Verdade”.</p>
+    </div>
+  </details>
+
+  <details class="theme">
+    <summary><h3>Política externa</h3><span class="chev"></span></summary>
+    <div class="theme-body">
+      <div class="pair">
+        <div class="col"><h4>Flávio Bolsonaro</h4><ol class="props">
+          <li><p>Retomar a entrada do Brasil na OCDE e acabar aos poucos com o IOF sobre câmbio.</p><div class="meta"><span class="pg">p. 63</span><span class="tag">Governo</span></div></li>
+          <li><p>Reaproximar o Brasil de Argentina, Estados Unidos e Israel, e negociar com China, União Europeia e Ásia.</p><div class="meta"><span class="pg">p. 62</span><span class="tag">Governo</span></div></li>
+          <li><p>Abrir o comércio para máquinas e insumos importados.</p><div class="meta"><span class="pg">p. 63</span><span class="tag">Governo</span><span class="tag">Lei</span></div></li>
+        </ol></div>
+        <div class="col"><h4>Lula</h4><ol class="props">
+          <li><p>Aprofundar o Mercosul e a integração da América do Sul.</p><div class="meta"><span class="pg">p. 80</span><span class="tag">Governo</span></div></li>
+          <li><p>Aproximação com os BRICS e o Sul Global; reforma da ONU, do FMI e do Banco Mundial.</p><div class="meta"><span class="pg">p. 81</span><span class="tag">Governo</span></div></li>
+          <li><p>Pôr em prática os acordos do Mercosul com a União Europeia, a EFTA e Singapura.</p><div class="meta"><span class="pg">p. 79</span><span class="tag">Governo</span><span class="tag">Lei</span></div></li>
+        </ol></div>
+      </div>
+      <p class="common">Conduzir a política externa é tarefa do presidente, mas tratados internacionais só valem depois de aprovados pelo Congresso.</p>
+    </div>
+  </details>
+</div>
+</details>
+
+<details class="sec" id="bens">
+  <summary class="sec-head"><h2 id="h-bens">Bens declarados</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Fato · TSE</p>
+  <p class="resumo">Flávio declarou R$ 8,19 milhões; Lula, R$ 4,78 milhões.</p>
+  <div class="pair">
+    <article class="cand-card">
+      <h3>Flávio Bolsonaro</h3>
+      <p class="big">R$ 8.186.555,83</p>
+      <p class="small">9 itens. O maior é uma casa no Lago Sul, em Brasília (R$ 6,23 milhões, 76% do total). Depois vêm um fundo de investimento (R$ 1,09 milhão) e depósitos em conta (R$ 569 mil).</p>
+    </article>
+    <article class="cand-card">
+      <h3>Lula</h3>
+      <p class="big">R$ 4.775.650,64</p>
+      <p class="small">18 itens. Os maiores são dois planos de previdência privada (VGBL) que somam R$ 3,30 milhões (69% do total). Depois vêm terrenos e uma casa em construção em São Bernardo do Campo (SP).</p>
+    </article>
+  </div>
+  <p class="small">Valores informados pelo próprio candidato ao registrar a candidatura. Não são avaliação de mercado: em geral repetem o valor da declaração de imposto de renda.</p>
+</div>
+</details>
+
+<details class="sec" id="campanha">
+  <summary class="sec-head"><h2 id="h-campanha">De onde veio o dinheiro da campanha</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Fato · TSE · prestação de contas parcial</p>
+  <p class="resumo">Até agora, Flávio recebeu R$ 95,5 milhões (63,5% de dinheiro público) e Lula, R$ 118,4 milhões (97,2%).</p>
+  <figure class="chart" style="margin:0">
+    <div class="legend" aria-hidden="true">
+      <span><i class="sw" style="background:var(--s1)"></i>Fundo eleitoral (FEFC)</span>
+      <span><i class="sw" style="background:var(--s2)"></i>Fundo partidário</span>
+      <span><i class="sw" style="background:var(--s3)"></i>Pessoas físicas</span>
+      <span><i class="sw" style="background:var(--s4)"></i>Outros</span>
+    </div>
+    <div class="bar-row">
+      <div class="lbl">Flávio Bolsonaro<small>R$ 95,5 mi · até 17/10</small></div>
+      <div class="bar" role="img" aria-label="Flávio Bolsonaro: R$ 95,5 milhões. Fundo eleitoral 47,0 milhões; fundo partidário 13,65 milhões; pessoas físicas 27,3 milhões; outros 7,6 milhões.">
+        <i style="width:39.69%;background:var(--s1)" title="Fundo eleitoral: R$ 47,0 mi (49%)"></i>
+        <i style="width:11.53%;background:var(--s2)" title="Fundo partidário: R$ 13,65 mi (14%)"></i>
+        <i style="width:23.03%;background:var(--s3)" title="Pessoas físicas: R$ 27,3 mi (29%)"></i>
+        <i style="width:6.43%;background:var(--s4)" title="Outros: R$ 7,6 mi (8%)"></i>
+      </div>
+    </div>
+    <div class="bar-row">
+      <div class="lbl">Lula<small>R$ 118,4 mi · até 20/10</small></div>
+      <div class="bar" role="img" aria-label="Lula: R$ 118,4 milhões. Fundo eleitoral 115,0 milhões; fundo partidário 0,15 milhão; pessoas físicas 2,0 milhões; outros 1,3 milhão.">
+        <i style="width:97.10%;background:var(--s1)" title="Fundo eleitoral: R$ 115,0 mi (97%)"></i>
+        <i style="width:0.13%;background:var(--s2)" title="Fundo partidário: R$ 0,15 mi (0,1%)"></i>
+        <i style="width:1.68%;background:var(--s3)" title="Pessoas físicas: R$ 2,0 mi (1,7%)"></i>
+        <i style="width:1.09%;background:var(--s4)" title="Outros: R$ 1,3 mi (1,1%)"></i>
+      </div>
+    </div>
+    <div class="axis" aria-hidden="true"><span></span><div><span>R$ 0</span><span>R$ 60 mi</span><span>R$ 118 mi</span></div></div>
+    <div class="tbl-wrap">
+      <table>
+        <caption class="small" style="text-align:left;caption-side:top;padding-bottom:6px">Valores em reais, como declarados ao TSE</caption>
+        <thead><tr><th>Origem</th><th class="n">Flávio Bolsonaro</th><th class="n">Lula</th></tr></thead>
+        <tbody>
+          <tr><td>Fundo eleitoral (FEFC)</td><td class="n">47.000.000,00</td><td class="n">115.000.000,00</td></tr>
+          <tr><td>Fundo partidário</td><td class="n">13.650.000,00</td><td class="n">150.000,00</td></tr>
+          <tr><td>Pessoas físicas</td><td class="n">27.274.363,82</td><td class="n">1.985.927,02</td></tr>
+          <tr><td>Outros (inclui doações em bens e serviços)</td><td class="n">7.618.424,28</td><td class="n">1.296.245,96</td></tr>
+          <tr><td><b>Total recebido</b></td><td class="n"><b>95.542.788,10</b></td><td class="n"><b>118.432.172,98</b></td></tr>
+          <tr><td>Parte que é dinheiro público</td><td class="n">63,5%</td><td class="n">97,2%</td></tr>
+          <tr><td>Número de doações de pessoas físicas</td><td class="n">529</td><td class="n">626</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Nenhum dos dois declarou dinheiro de empresas (proibido desde 2015) nem recursos próprios. O limite legal de gastos é o mesmo para os dois: R$ 88,9 milhões no 1º turno e R$ 44,5 milhões no 2º.</p>
+  </figure>
+  <p class="small">Prestação de contas parcial, ainda em andamento; os dois candidatos atualizaram em datas diferentes. O fundo eleitoral (FEFC) e o fundo partidário são dinheiro público, repassado pelos partidos.</p>
+</div>
+</details>
+
+<details class="sec" id="atuacao">
+  <summary class="sec-head"><h2 id="h-atu">Atuação recente</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Fato · Senado Federal, dados abertos</p>
+  <p class="resumo">Como Flávio votou nas maiores medidas do governo Lula, a presença dele no Senado e o que o Congresso fez com as medidas provisórias de Lula.</p>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Medida</th><th>Papel do governo Lula</th><th>Voto de Flávio Bolsonaro</th><th>Resultado no Senado</th></tr></thead>
+      <tbody>
+        <tr><td>PEC da Transição (PEC 32/2022), dez/2022: mais espaço no orçamento de 2023 para o Bolsa Família e outros gastos</td><td>Pedida pela equipe de transição</td><td>Não</td><td>Aprovada, 64 a 16</td></tr>
+        <tr><td>Arcabouço fiscal (PLP 93/2023), jun/2023: nova regra de gastos</td><td>Autor</td><td>Não</td><td>Aprovado, 57 a 17</td></tr>
+        <tr><td>Reforma tributária (PEC 45/2019), nov/2023: troca 5 impostos sobre consumo por 2</td><td>Prioridade do governo (a PEC é de 2019, da Câmara)</td><td>Não</td><td>Aprovada, 53 a 24</td></tr>
+        <tr><td>Lei Antifacção (PL 5.582/2025), dez/2025: marco legal contra o crime organizado</td><td>Autor (o Senado votou um texto substitutivo)</td><td>Sim</td><td>Aprovada, 64 a 0</td></tr>
+        <tr><td>Isenção do IR para quem ganha até R$ 5 mil (PL 1.087/2025)</td><td>Autor</td><td colspan="2">Sem votação nominal registrada nos dados do Senado, por isso não há voto individual a mostrar</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="pair">
+    <article class="cand-card">
+      <h3>Flávio Bolsonaro no Senado</h3>
+      <div class="stat-row">
+        <div><span class="big">77%</span><span class="small">das 426 votações nominais desde fev/2023 tiveram o voto dele</span></div>
+        <div><span class="big">72%</span><span class="small">média dos 74 senadores no mesmo período</span></div>
+      </div>
+      <p class="small">Ficou em 31º de 74 em participação. Conta como participação votar sim, não, abster-se ou votar em votação secreta.</p>
+      <div class="stat-row">
+        <div><span class="big">65</span><span class="small">propostas como autor principal desde 2019</span></div>
+        <div><span class="big">0</span><span class="small">viraram lei até agora</span></div>
+      </div>
+      <p class="small">São 53 projetos de lei, 4 PECs, 3 projetos de lei complementar e 5 de decreto legislativo. Dois foram aprovados no Senado e estão na Câmara; 59 seguem em tramitação, 36 deles esperando relator. Entre as PECs estão a redução da maioridade penal (PEC 32/2019) e o fim da reeleição (PEC 4/2026). A média dos outros senadores nesse quesito ainda não foi calculada.</p>
+    </article>
+    <article class="cand-card">
+      <h3>Governo Lula e o Congresso</h3>
+      <div class="stat-row">
+        <div><span class="big">245</span><span class="small">medidas provisórias desde jan/2023</span></div>
+        <div><span class="big">98</span><span class="small">delas só liberavam dinheiro (crédito extraordinário)</span></div>
+      </div>
+      <p class="small">Das outras 147: 30 viraram lei, 90 perderam a validade sem votação, 12 foram revogadas pelo próprio governo e 15 ainda tramitam.</p>
+      <p class="small"><b>Para comparar:</b> no governo anterior (2019–2022) foram 284 medidas provisórias, 211 delas fora do tipo crédito extraordinário. Dessas, 139 viraram lei e 63 perderam a validade.</p>
+      <p class="small">A ficha não explica a diferença. Ela pode vir da relação com o Congresso ou da escolha de mandar projetos de lei em vez de medidas provisórias.</p>
+    </article>
+  </div>
+</div>
+</details>
+
+<details class="sec" id="justica">
+  <summary class="sec-head"><h2 id="h-jus">Situação na Justiça</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Fato · TSE e decisões judiciais (relatadas pela imprensa)</p>
+  <p class="resumo">Nenhum dos dois tem condenação em vigor. Os casos mais conhecidos de ambos terminaram sem julgamento do mérito.</p>
+  <div class="pair">
+    <article class="cand-card">
+      <h3>Flávio Bolsonaro: caso das “rachadinhas”</h3>
+      <p class="small">Investigação do Ministério Público do Rio sobre suposto desvio de salários de funcionários do gabinete dele como deputado estadual. O caso começou com um relatório do Coaf sobre movimentações de um ex-assessor.</p>
+      <details class="sub"><summary>Linha do tempo (4 momentos)</summary>
+      <ol class="timeline">
+        <li><time>out/2020</time>O MP do Rio denuncia Flávio e outras 16 pessoas por peculato, lavagem de dinheiro e organização criminosa.</li>
+        <li><time>2021</time>O STJ e o STF anulam provas e decisões do início da investigação, por motivos processuais: o foro em que o caso deveria correr e a forma de obtenção de dados.</li>
+        <li><time>mai/2022</time>A pedido do próprio MP, já sem as provas anuladas, o Órgão Especial do TJ do Rio rejeita a denúncia e o caso é arquivado.</li>
+        <li><time>fev/2025</time>O ministro Gilmar Mendes (STF) nega recurso do MP para reabrir o caso e afirma que nada impede uma nova denúncia com outras provas.</li>
+      </ol>
+      </details>
+      <div class="verdict"><p><b>O que foi decidido:</b> anulação de provas e arquivamento. Nenhum tribunal julgou se houve ou não desvio.</p><p><b>Situação hoje:</b> sem ação penal em curso, segundo as reportagens consultadas.</p></div>
+      <div class="sides">
+        <p>Quem o considera inocente aponta que ele nunca foi condenado, que as provas foram declaradas ilegais e que o próprio MP pediu o arquivamento.</p>
+        <p>Quem duvida aponta que a anulação não examinou os fatos e que o caso poderia ser reaberto com provas obtidas de forma válida.</p>
+      </div>
+    </article>
+    <article class="cand-card">
+      <h3>Lula: casos do tríplex e do sítio (Lava Jato)</h3>
+      <p class="small">Processos da Lava Jato em Curitiba que o acusavam de receber vantagens de empreiteiras (um apartamento no Guarujá e reformas em um sítio em Atibaia).</p>
+      <details class="sub"><summary>Linha do tempo (4 momentos)</summary>
+      <ol class="timeline">
+        <li><time>2017–2019</time>Tríplex: condenado em 1ª instância (2017); condenação confirmada pelo TRF4 (2018) e pelo STJ, com pena reduzida (2019). Sítio: condenado em 1ª e 2ª instâncias (2019).</li>
+        <li><time>abr/2018 – nov/2019</time>Preso. Foi solto quando o STF decidiu que a prisão só pode ocorrer depois de esgotados todos os recursos.</li>
+        <li><time>mar–jun/2021</time>O STF decide que a vara de Curitiba não era a competente para julgar os casos (HC 193.726) e que o juiz Sergio Moro foi parcial (HC 164.493). As condenações e os atos do juiz são anulados, e os casos vão para a Justiça Federal do DF.</li>
+        <li><time>ago/2021 – jan/2022</time>No DF, a nova denúncia do sítio é rejeitada por falta de provas válidas, e o caso do tríplex é arquivado por prescrição, a pedido do próprio MPF.</li>
+      </ol>
+      </details>
+      <div class="verdict"><p><b>O que foi decidido:</b> anulação por juiz incompetente e parcial, seguida de prescrição e arquivamento. Nenhum tribunal voltou a julgar se houve ou não corrupção.</p><p><b>Situação hoje:</b> sem condenação em vigor.</p></div>
+      <div class="sides">
+        <p>Quem o considera inocente aponta que as condenações foram anuladas, que o STF considerou o juiz parcial e que ele não voltou a ser condenado.</p>
+        <p>Quem duvida aponta que, antes da anulação, a condenação do tríplex tinha sido confirmada por dois tribunais e que o STF não reexaminou as provas.</p>
+      </div>
+    </article>
+  </div>
+  <p class="note">Repare que os dois casos terminaram do mesmo jeito: sem julgamento do mérito. Por isso as duas torcidas conseguem usar o mesmo argumento em sentidos opostos. Esta ficha não decide quem tem razão. O estudo completo dos dois casos, com o que a acusação e a defesa afirmavam, o que o STF disse e as perguntas que continuam em aberto, está em <a href="casos/">Casos: Lula e Flávio</a>.</p>
+  <p class="small">O que significam absolvição, anulação, prescrição e arquivamento: veja <a href="#glossario">Palavras da Justiça</a>, no fim da página.</p>
+</div>
+</details>
+
+<details class="sec" id="numeros">
+  <summary class="sec-head"><h2 id="h-num">Números que os planos citam, conferidos</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Afirmação do plano · conferida em dado oficial</p>
+  <p class="resumo">12 números citados nos planos, conferidos: 5 conferem, 4 conferem em parte, 1 não confere e 2 não dá para conferir.</p>
+  <div class="pair">
+    <div class="col"><h4 class="eyebrow">Plano de Flávio Bolsonaro</h4><ul class="claims">
+      <li><span class="st part">confere em parte</span><span class="q">A dívida pública subiu cerca de 13 pontos do PIB nos 4 anos do governo atual.</span><span class="data">Dívida bruta: 71,7% do PIB em dez/2022 e 82,9% em ago/2026, alta de 11,2 pontos em 3 anos e 8 meses. O mandato ainda não acabou.</span><span class="pg">p. 8, 29, 68 · Banco Central</span></li>
+      <li><span class="st ok">confere</span><span class="q">No governo Jair Bolsonaro a dívida caiu 4 pontos do PIB, mesmo com a pandemia.</span><span class="data">75,3% em dez/2018 e 71,7% em dez/2022: queda de 3,6 pontos. No meio do caminho chegou a 87,7% (out/2020).</span><span class="pg">p. 29, 68 · Banco Central</span></li>
+      <li><span class="st ok">confere</span><span class="q">Os juros estão no nível mais alto em 19 anos.</span><span class="data">A Selic chegou a 15% em 2025, o nível mais alto desde 2006. Em outubro de 2026 está em torno de 13,65%. Quem decide os juros é o Banco Central.</span><span class="pg">p. 29 · Banco Central</span></li>
+      <li><span class="st na">não verificável</span><span class="q">O governo atual fez 30 aumentos de tributos.</span><span class="data">Não existe contagem oficial. O número depende do que se considera aumento.</span><span class="pg">p. 29, 68</span></li>
+      <li><span class="st part">confere (reportagem)</span><span class="q">A fila do INSS chegou a 3 milhões de pedidos no início de 2026.</span><span class="data">Reportagens citam o boletim oficial da Previdência: mais de 3 milhões em dez/2025 e 3,1 milhões em fev/2026. Depois caiu para cerca de 1,5 milhão em julho.</span><span class="pg">p. 23, 26 · imprensa</span></li>
+      <li><span class="st part">depende da fonte</span><span class="q">A extrema pobreza caiu para 1,95% em 2020, a menor da história.</span><span class="data">É o número do Banco Mundial para 2020, segundo reportagens de 2022. O IBGE, com a mesma linha de pobreza, calcula 6,1% para 2020, e não o menor da série.</span><span class="pg">p. 42 · IBGE</span></li>
+    </ul></div>
+    <div class="col"><h4 class="eyebrow">Plano de Lula</h4><ul class="claims">
+      <li><span class="st ok">confere</span><span class="q">A inflação média foi de 4,6% ao ano, a menor de um mandato.</span><span class="data">IPCA de 4,62% em 2023, 4,83% em 2024 e 4,26% em 2025: média de 4,6%. É a menor média de um mandato desde o Plano Real; a segunda menor é 2007–2010, com 5,1%. Em 2026, até setembro, 3,95%.</span><span class="pg">p. 10 · IBGE via Banco Central</span></li>
+      <li><span class="st no">não confere</span><span class="q">Foram criados 8 milhões de empregos entre 2023 e junho de 2026.</span><span class="data">As duas medidas oficiais dão menos: +5,3 milhões de empregos com carteira (CAGED) e +5,5 milhões de pessoas ocupadas (IBGE), de dez/2022 a jun/2026. O plano não diz qual medida usou.</span><span class="pg">p. 73 · Banco Central e IBGE</span></li>
+      <li><span class="st ok">confere</span><span class="q">Entre 2017 e 2022 a economia cresceu em média 1,5% ao ano.</span><span class="data">Média de 1,5%, incluindo a queda de 3,3% em 2020, na pandemia. Em 2023–2025 a média foi de 3,0%.</span><span class="pg">p. 8 · IBGE via Banco Central</span></li>
+      <li><span class="st ok">confere</span><span class="q">O desemprego chegou ao menor nível da série histórica.</span><span class="data">5,1% no trimestre out–dez/2025, o menor desde o início da série, em 2012. No dado mais recente (jun–ago/2026), 5,3%.</span><span class="pg">p. 12 · IBGE</span></li>
+      <li><span class="st part">confere em parte</span><span class="q">A extrema pobreza caiu para 4,6%, a menor da série.</span><span class="data">A tendência confere, o número não: o IBGE dá 4,4% em 2023 e 3,5% em 2024, o menor desde 2012. A origem do 4,6% não foi encontrada.</span><span class="pg">p. 12 · IBGE</span></li>
+      <li><span class="st na">projeção</span><span class="q">O déficit das contas públicas vai fechar 2026 perto de 0,4% do PIB.</span><span class="data">É uma previsão. Só pode ser conferida depois que o ano fechar.</span><span class="pg">p. 11</span></li>
+    </ul></div>
+  </div>
+  <p class="note"><b>O caso da extrema pobreza mostra por que conferir importa.</b> Os dois planos dizem ter alcançado a menor extrema pobreza da história. Na série do IBGE, que usa a mesma régua para todos os anos (US$ 2,15 por dia), os números são: 7,4% em 2019, 6,1% em 2020, 9,0% em 2021, 5,9% em 2022, 4,4% em 2023 e 3,5% em 2024. O 1,95% vem de outra instituição, com outro método. Os números citados pelos planos não batem com o IBGE.</p>
+</div>
+</details>
+</main>
+
+<p class="group-label" id="para-entender">Para entender: como funciona e de onde vêm os dados</p>
+
+<div class="secs" role="region" aria-label="Para entender">
+<details class="sec" id="como-ler">
+  <summary class="sec-head"><h2>Como ler esta ficha</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Para entender</p>
+  <p class="resumo">Cada informação tem uma etiqueta: fato, proposta, quem decide, afirmação do plano ou reportagem.</p>
+  <div class="howto">
+    <div><b>Fato</b><span>Dado tirado de fonte oficial (TSE, Constituição), com link no fim da página.</span></div>
+    <div><b>Proposta</b><span>O que o plano de governo diz, resumido, com o número da página do PDF.</span></div>
+    <div><b>Quem decide</b><span>Etiqueta que diz quem precisa aprovar cada proposta. É uma interpretação desta ficha, baseada na Constituição.</span></div>
+    <div><b>Afirmação do plano</b><span>Número que a própria campanha cita. Cada um foi conferido em dado oficial e recebeu uma etiqueta com o resultado.</span></div>
+    <div><b>Reportagem</b><span>Quando o documento original não estava acessível, a fonte é a imprensa. O veículo é sempre citado.</span></div>
+  </div>
+  <p class="small"><b>Etiquetas de “quem decide”</b>, usadas nas propostas:</p>
+  <div class="tags-key">
+    <div><span class="tag">Governo</span>O governo federal faz sozinho, por decreto, programa ou gestão, desde que haja dinheiro no orçamento.</div>
+    <div><span class="tag">Lei</span>Precisa de lei aprovada pela Câmara e pelo Senado.</div>
+    <div><span class="tag pec">PEC</span>Muda a Constituição: 3/5 dos votos na Câmara e no Senado, em dois turnos.</div>
+    <div><span class="tag">Estados e municípios</span>Depende de quem executa na ponta: polícias, escolas, postos de saúde.</div>
+    <div><span class="tag">Banco Central</span>Juros são decididos pelo Banco Central, que é autônomo.</div>
+  </div>
+</div>
+</details>
+
+<details class="sec" id="poder">
+  <summary class="sec-head"><h2 id="h-poder">Quem decide o quê</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Para entender · Constituição Federal</p>
+  <p class="resumo">O que um presidente faz sozinho e o que depende do Congresso, do STF, dos estados e do Banco Central.</p>
+  <p class="sec-desc">Um presidente não governa sozinho. Este quadro mostra o caminho que cada tipo de proposta precisa percorrer, para ajudar a separar promessa de poder real.</p>
+  <div class="power">
+    <div><b>Decreto e gestão</b><p>O presidente regulamenta leis que já existem, organiza programas, nomeia ministros e altera algumas alíquotas (IOF, IPI, importação e exportação). Não pode criar regra que contrarie a lei.</p><span class="src">CF art. 84 e 153 §1º</span></div>
+    <div><b>Medida provisória</b><p>Vale na hora, mas perde a validade em até 120 dias se o Congresso não a aprovar.</p><span class="src">CF art. 62</span></div>
+    <div><b>Lei</b><p>Câmara e Senado aprovam. O presidente sanciona ou veta, e o Congresso pode derrubar o veto com maioria absoluta. Criar ou extinguir ministério também exige lei.</p><span class="src">CF art. 66 e 88</span></div>
+    <div><b>Emenda à Constituição (PEC)</b><p>Exige 3/5 dos votos na Câmara e no Senado, em dois turnos em cada casa. Quem promulga é o próprio Congresso: o presidente não sanciona nem veta. Maioridade penal, reeleição, jornada máxima e o papel do STF estão na Constituição.</p><span class="src">CF art. 60, 7º, 14, 102 e 228</span></div>
+    <div><b>Orçamento</b><p>O presidente propõe; o Congresso altera e aprova. Parte do dinheiro vai para emendas dos parlamentares, que o governo é obrigado a pagar.</p><span class="src">CF art. 165 e 166</span></div>
+    <div><b>Juros</b><p>A taxa Selic é decidida pelo Copom, do Banco Central. Desde 2021 o Banco Central é autônomo: o presidente indica os diretores, o Senado aprova, e eles têm mandato fixo.</p><span class="src">Lei Complementar 179/2021</span></div>
+    <div><b>Estados e municípios</b><p>As polícias Militar e Civil são dos estados. A maior parte das escolas e dos postos de saúde é dos estados e municípios. O governo federal financia e coordena, mas não executa sozinho.</p><span class="src">CF art. 144, 198 e 211</span></div>
+    <div><b>STF</b><p>Pode anular leis e atos que considere contrários à Constituição, inclusive os aprovados pelo Congresso.</p><span class="src">CF art. 102</span></div>
+  </div>
+</div>
+</details>
+
+<details class="sec" id="glossario">
+  <summary class="sec-head"><h2>Palavras da Justiça</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Para entender</p>
+  <p class="resumo">Absolvição, anulação, prescrição e arquivamento não são a mesma coisa.</p>
+  <div class="gloss">
+    <div><b>Absolvição</b><span class="small">O juiz examina as provas e conclui que a pessoa não cometeu o crime, ou que não há prova suficiente.</span></div>
+    <div><b>Anulação</b><span class="small">Um tribunal desfaz decisões por erro no processo (juiz errado, juiz parcial, prova obtida de forma ilegal). Os fatos não são julgados.</span></div>
+    <div><b>Prescrição</b><span class="small">O Estado perde o prazo para punir. O caso acaba sem dizer se houve crime.</span></div>
+    <div><b>Arquivamento</b><span class="small">O caso é encerrado sem julgamento. Pode ser reaberto se surgirem provas novas e válidas, enquanto não prescrever.</span></div>
+  </div>
+</div>
+</details>
+
+<details class="sec" id="falta">
+  <summary class="sec-head"><h2 id="h-falta">O que ainda não está aqui</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Limites desta versão</p>
+  <p class="resumo">Quatro pontos que esta versão ainda não cobre.</p>
+  <div class="caveat">
+    <ul class="plain">
+      <li><b>Documentos judiciais originais.</b> A seção de Justiça se apoia em reportagens sobre as decisões. A leitura das decisões e das certidões anexadas ao TSE (24 de Flávio, 90 de Lula) fica para o estudo de casos.</li>
+      <li><b>Comparação dos projetos de Flávio com os de outros senadores</b> e dos vetos de Lula derrubados pelo Congresso.</li>
+      <li><b>Boletim oficial do INSS</b>, para trocar a reportagem pela fonte primária.</li>
+      <li><b>Despesas de campanha</b> e lista de doadores.</li>
+    </ul>
+  </div>
+</div>
+</details>
+
+<details class="sec" id="fontes">
+  <summary class="sec-head">
+    <p class="eyebrow">Referências</p>
+    <h2>Fontes</h2>
+    <p class="teaser">Todas as fontes, com link e data de consulta.</p>
+    <span class="more" aria-hidden="true"></span>
+  </summary>
+  <div class="sec-body fontes">
+  <p class="small">Versão 3 · dados consultados em 21/10/2026 · candidatos em ordem alfabética do nome de urna.</p>
+  <p><b>Fontes primárias</b> (consultadas em 21/10/2026)</p>
+  <ul>
+    <li>TSE, DivulgaCandContas: página de candidatura de <a href="https://divulgacandcontas.tse.jus.br/divulga/#/candidato/BR/BR/20322002026/280002551544/2026/BR" target="_blank" rel="noopener">Flávio Bolsonaro</a> e de <a href="https://divulgacandcontas.tse.jus.br/divulga/#/candidato/BR/BR/20322002026/280002542548/2026/BR" target="_blank" rel="noopener">Lula</a> (registro, bens, prestação de contas, certidões).</li>
+    <li>Planos de governo registrados no TSE: <a href="https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104726" target="_blank" rel="noopener">Flávio Bolsonaro, 76 páginas</a>; <a href="https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017016005" target="_blank" rel="noopener">Lula, 84 páginas</a>. Os números de página desta ficha seguem a numeração impressa nos PDFs.</li>
+    <li>TSE: <a href="https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/flavio-bolsonaro-e-lula-vao-disputar-o-2o-turno-para-a-presidencia-da-republica" target="_blank" rel="noopener">resultado do 1º turno</a>.</li>
+    <li><a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" rel="noopener">Constituição Federal</a> e <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp179.htm" target="_blank" rel="noopener">Lei Complementar 179/2021</a> (autonomia do Banco Central).</li>
+    <li>Senado Federal, <a href="https://legis.senado.leg.br/dadosabertos/" target="_blank" rel="noopener">dados abertos</a>: votações nominais de 2022 a 2026, propostas de autoria de Flávio Bolsonaro (código 5894) e medidas provisórias de 2019 a 2026.</li>
+    <li>Banco Central, <a href="https://www3.bcb.gov.br/sgspub/" target="_blank" rel="noopener">séries temporais (SGS)</a>: dívida bruta (13762), IPCA (433), PIB (7326), Selic (4189), estoque de empregos CAGED (28763).</li>
+    <li>IBGE: <a href="https://sidra.ibge.gov.br/tabela/6381" target="_blank" rel="noopener">desemprego (tabela 6381)</a>, <a href="https://sidra.ibge.gov.br/tabela/6320" target="_blank" rel="noopener">pessoas ocupadas (tabela 6320)</a> e <a href="https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/45344-8-6-milhoes-de-pessoas-sairam-da-pobreza-entre-2023-e-2024" target="_blank" rel="noopener">Síntese de Indicadores Sociais 2025 (pobreza)</a>.</li>
+  </ul>
+  <p><b>Reportagens</b> (fonte secundária, usadas onde o documento original não foi lido)</p>
+  <ul>
+    <li>Caso Lula: Conjur, <a href="https://conjur.com.br/2022-jan-28/justica-df-declara-prescricao-arquiva-acao-triplex-guaruja/" target="_blank" rel="noopener">prescrição do tríplex</a> (28/01/2022); Dizer o Direito, <a href="https://www.dizerodireito.com.br/2021/05/entenda-decisao-do-stf-que-anulou-os.html" target="_blank" rel="noopener">decisão do STF sobre a competência</a> (2021).</li>
+    <li>Caso Flávio: Conjur, <a href="https://conjur.com.br/2022-mai-16/tj-rj-arquiva-denuncia-flavio-bolsonaro-rachadinha/" target="_blank" rel="noopener">arquivamento no TJ-RJ</a> (16/05/2022); Agência Brasil, <a href="https://agenciabrasil.ebc.com.br/politica/noticia/2022-05/justica-do-rio-arquiva-processo-de-caso-de-supostas-rachadinhas" target="_blank" rel="noopener">mesmo fato</a>; Poder360, <a href="https://www.poder360.com.br/poder-justica/gilmar-nega-pedido-para-reabrir-acao-contra-flavio-por-rachadinha/" target="_blank" rel="noopener">recurso negado no STF</a> (2025).</li>
+    <li>Fila do INSS: <a href="https://previdenciarista.com/blog/fila-do-inss-ultrapassa-3-milhoes-de-pedidos-pendentes/" target="_blank" rel="noopener">Previdenciarista</a> e <a href="https://edicao.correiobraziliense.com.br/correiobraziliense/2026/08/08/14324d/pdf/A07-ECO-0808-DIG.pdf" target="_blank" rel="noopener">Correio Braziliense</a> (08/08/2026), citando o boletim da Previdência e o CNPS.</li>
+    <li>Extrema pobreza de 1,95% (Banco Mundial): <a href="https://www.opovo.com.br/noticias/economia/2022/11/07/extrema-pobreza-no-brasil-caiu-para-minima-historica-em-2020-diz-banco-mundial.html" target="_blank" rel="noopener">O Povo</a> (07/11/2022).</li>
+  </ul>
+  <p>Dados pessoais que não ajudam a decidir o voto (CPF, título de eleitor, nomes de doadores) foram deixados de fora de propósito.</p>
+</div>
+</details>
+</div>
+
+</div>
+<script>
+(function(){
+  function openTarget(id){var el=id&&document.getElementById(id);if(!el)return;var d=el.closest('details');while(d){d.open=true;d=d.parentElement&&d.parentElement.closest('details');}if(el.tagName==='DETAILS')el.open=true;}
+  document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(a)openTarget(a.getAttribute('href').slice(1));});
+  if(location.hash)openTarget(location.hash.slice(1));
+  var btn=document.getElementById('toggle-all');
+  if(btn)btn.addEventListener('click',function(){var all=[].slice.call(document.querySelectorAll('details.sec'));var open=all.some(function(d){return !d.open;});all.forEach(function(d){d.open=open;});btn.textContent=open?'Fechar todas as seções':'Abrir todas as seções';});
+})();
+</script>

@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Todos os escândalos e acusações associados aos dois candidatos do 2º turno de 2026, com o desfecho de cada um. Os dois casos principais têm um estudo detalhado. A página não diz quem é culpado ou…">
+<meta property="og:title" content="Casos: Lula e Flávio">
+<meta property="og:description" content="Todos os escândalos e acusações associados aos dois candidatos do 2º turno de 2026, com o desfecho de cada um. Os dois casos principais têm um estudo detalhado. A página não diz quem é culpado ou…">
+<meta property="og:type" content="article">
+<title>Casos: Lula e Flávio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,650&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: mesma identidade da Ficha do 2º Turno. Uma coluna; os dois casos seguem o MESMO roteiro, na mesma ordem, para facilitar a comparação. Cores neutras, sem cor de partido. */
+:root {
+  --bg: #f6f7f6; --surface: #ffffff; --ink: #16191a; --muted: #586064; --line: #d9dedc;
+  --accent: #2f5b5f; --accent-soft: #e3eeee;
+  --acc-bg: #f3ece0; --acc-ink: #6a4a12;   /* alegação da acusação */
+  --def-bg: #e6ecf3; --def-ink: #27476b;   /* alegação da defesa */
+  --f-display: "Literata", Georgia, "Times New Roman", serif;
+  --f-body: "Public Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  --f-mono: "IBM Plex Mono", Consolas, "Courier New", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141716; --surface: #1c2021; --ink: #eef1f0; --muted: #a6afb2; --line: #343b3d;
+    --accent: #8cc3c6; --accent-soft: #23393b;
+    --acc-bg: #34291a; --acc-ink: #ecc98d; --def-bg: #1d2836; --def-ink: #a9c6ea;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141716; --surface: #1c2021; --ink: #eef1f0; --muted: #a6afb2; --line: #343b3d;
+  --accent: #8cc3c6; --accent-soft: #23393b;
+  --acc-bg: #34291a; --acc-ink: #ecc98d; --def-bg: #1d2836; --def-ink: #a9c6ea;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.55; }
+.wrap { max-width: 980px; margin: 0 auto; padding-inline: 18px; padding-block: 28px 64px; display: grid; gap: 44px; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 650; text-wrap: balance; margin: 0; line-height: 1.2; }
+h1 { font-size: clamp(1.9rem, 4.6vw, 2.7rem); }
+h2 { font-size: clamp(1.4rem, 3.2vw, 1.8rem); }
+h3 { font-size: 1.1rem; font-family: var(--f-body); font-weight: 700; }
+p { margin: 0; }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.eyebrow { font-family: var(--f-mono); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.lede { max-width: 66ch; color: var(--muted); font-size: 1.04rem; }
+.small { font-size: .9rem; color: var(--muted); }
+section { display: grid; gap: 18px; }
+.sec-head { display: grid; gap: 6px; border-top: 1px solid var(--line); padding-top: 22px; }
+.sec-head p { max-width: 70ch; color: var(--muted); }
+header.top { display: grid; gap: 14px; }
+.stamp { display: flex; flex-wrap: wrap; gap: 8px 18px; font-family: var(--f-mono); font-size: .8rem; color: var(--muted); }
+nav.toc { display: flex; flex-wrap: wrap; gap: 8px; }
+nav.toc a { font-size: .86rem; text-decoration: none; border: 1px solid var(--line); background: var(--surface); padding: 5px 11px; border-radius: 999px; color: var(--ink); }
+nav.toc a:hover { border-color: var(--accent); }
+
+.grid4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; }
+.grid4 div { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; display: grid; gap: 4px; align-content: start; }
+.grid4 b { font-size: .95rem; }
+.grid4 span { color: var(--muted); font-size: .9rem; }
+.lv { font-family: var(--f-mono); font-size: .72rem; border-radius: 4px; padding: 2px 7px; justify-self: start; }
+.lv.fato { background: var(--accent-soft); color: var(--accent); }
+.lv.acus { background: var(--acc-bg); color: var(--acc-ink); }
+.lv.def { background: var(--def-bg); color: var(--def-ink); }
+.lv.int { background: var(--bg); color: var(--muted); border: 1px solid var(--line); }
+
+.tbl-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: .92rem; min-width: 620px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tbody tr:last-child td { border-bottom: 0; }
+thead th { font-weight: 600; color: var(--muted); font-size: .8rem; font-family: var(--f-mono); letter-spacing: .04em; text-transform: uppercase; }
+tbody th { font-weight: 600; width: 26%; }
+
+.case { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px; display: grid; gap: 22px; }
+.case-head { display: grid; gap: 6px; }
+.case-head h2 { font-size: clamp(1.35rem, 3vw, 1.7rem); }
+.block { display: grid; gap: 10px; }
+.block > h3 { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+ol.timeline { list-style: none; margin: 0; padding: 0 0 0 16px; border-left: 2px solid var(--line); display: grid; gap: 12px; }
+ol.timeline li { display: grid; gap: 2px; position: relative; }
+ol.timeline li::before { content: ""; position: absolute; left: -22px; top: 7px; width: 10px; height: 10px; border-radius: 50%; background: var(--surface); border: 2px solid var(--muted); }
+ol.timeline li.key::before { background: var(--accent); border-color: var(--accent); }
+ol.timeline time { font-family: var(--f-mono); font-size: .78rem; color: var(--muted); }
+ol.timeline .src { font-size: .8rem; color: var(--muted); }
+ul.pts { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.box { border-radius: 8px; padding: 12px 14px; display: grid; gap: 8px; }
+.box.acus { background: var(--acc-bg); }
+.box.def { background: var(--def-bg); }
+.box .src { font-size: .8rem; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.two > * { min-width: 0; }
+.reading { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; display: grid; gap: 6px; }
+.reading b { font-size: .96rem; }
+.open { border-left: 3px solid var(--accent); padding-left: 12px; display: grid; gap: 8px; }
+.note { background: var(--accent-soft); border-radius: 8px; padding: 12px 14px; font-size: .95rem; }
+.group-label { font-family: var(--f-mono); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 18px; }
+nav.toc a.toc-aux { border-style: dashed; color: var(--muted); }
+
+/* seções recolhíveis */
+.secs { display: grid; }
+details.sec { border-top: 1px solid var(--line); }
+details.sec:last-child { border-bottom: 1px solid var(--line); }
+details.sec > summary { list-style: none; cursor: pointer; display: grid; gap: 5px; padding: 18px 96px 18px 0; position: relative; border-top: 0; }
+details.sec > summary::-webkit-details-marker { display: none; }
+details.sec > summary:hover h2 { color: var(--accent); }
+.teaser { color: var(--muted); max-width: 70ch; font-size: .97rem; }
+.more { position: absolute; right: 0; top: 20px; font-family: var(--f-mono); font-size: .76rem; border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 3px 11px; color: var(--ink); }
+details.sec > summary:hover .more { border-color: var(--accent); color: var(--accent); }
+details.sec:not([open]) > summary .more::after { content: "abrir"; }
+details.sec[open] > summary .more::after { content: "fechar"; }
+.sec-body { display: grid; gap: 18px; padding-bottom: 30px; }
+.sec-desc { color: var(--muted); max-width: 70ch; }
+.toggle-all { justify-self: start; font: inherit; font-size: .86rem; cursor: pointer; background: none; border: 0; color: var(--accent); padding: 0; text-decoration: underline; text-underline-offset: 3px; }
+details.sub { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+details.sub > summary { cursor: pointer; font-weight: 600; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+details.sub[open] > summary { margin-bottom: 12px; }
+.wrap { gap: 32px; }
+@media (max-width: 720px) { details.sec > summary { padding-right: 0; padding-top: 44px; } .more { top: 14px; left: 0; right: auto; } }
+
+footer { border-top: 1px solid var(--line); padding-top: 20px; display: grid; gap: 10px; font-size: .9rem; color: var(--muted); }
+footer ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+@media (max-width: 720px) { .two { grid-template-columns: 1fr; } .case { padding: 16px; } }
+
+/* cada seção é um botão com o título; o resto aparece ao abrir */
+.secs { gap: 10px; }
+details.sec { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+details.sec:last-child { border-bottom: 1px solid var(--line); }
+details.sec > summary { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 16px 18px; border-radius: 12px; }
+details.sec > summary h2 { font-size: clamp(1.15rem, 3.4vw, 1.4rem); }
+details.sec > summary:hover { background: var(--accent-soft); }
+details.sec[open] > summary { border-bottom: 1px solid var(--line); border-radius: 12px 12px 0 0; }
+.icon { flex: none; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); display: grid; place-items: center; font-family: var(--f-mono); font-size: 1.1rem; line-height: 1; color: var(--accent); background: var(--bg); }
+.icon::before { content: "+"; }
+details[open] > summary .icon::before { content: "−"; }
+.sec-body { padding: 16px 18px 20px; gap: 16px; }
+.resumo { font-size: 1.02rem; max-width: 70ch; }
+.group-label { margin-top: 26px; margin-bottom: -2px; }
+.theme > summary .chev, .theme > summary .chev::after { font-size: 1.1rem; }
+.theme[open] > summary .chev::after { content: "−"; }
+.theme:not([open]) > summary .chev::after { content: "+"; }
+.theme > summary .chev { width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); display: grid; place-items: center; color: var(--accent); background: var(--bg); flex: none; }
+details.sub > summary { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; list-style: none; }
+details.sub > summary::-webkit-details-marker { display: none; }
+details.sub > summary::after { content: "+"; margin-left: auto; font-family: var(--f-mono); color: var(--accent); }
+details.sub[open] > summary::after { content: "−"; }
+@media (max-width: 720px) { details.sec > summary { padding: 14px 14px; } .sec-body { padding: 14px 14px 18px; } }
+
+/* subitens: fundo colorido, letra menor e sem moldura; item aberto ganha contorno na cor de destaque */
+details.sec[open] { border-color: var(--accent); }
+details.sec[open] > summary { border-bottom-color: var(--line); }
+details.sub { background: var(--accent-soft); border: 0; border-radius: 8px; padding: 0; }
+details.sub > summary { padding: 11px 12px; font-weight: 600; }
+details.sub[open] > summary { margin-bottom: 0; }
+details.sub > :not(summary) { margin: 0 6px 6px; background: var(--surface); border-radius: 6px; padding: 12px; }
+details.sub > ol.timeline { padding: 12px 12px 12px 30px; border-left: 0; }
+details.sub > ol.timeline li::before { left: -20px; }
+
+/* lista de todos os casos: título + situação; detalhes ao abrir */
+.items { display: grid; gap: 8px; }
+details.it > summary { align-items: center; }
+.it-t { display: grid; gap: 1px; font-weight: 600; }
+.it-t small { font-weight: 400; font-size: .8rem; color: var(--muted); }
+.st { justify-self: start; margin-top: 4px; font-family: var(--f-mono); font-size: .7rem; padding: 2px 7px; border-radius: 4px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); white-space: nowrap; }
+.st.st-on { border-color: var(--acc-ink); color: var(--acc-ink); }
+.it-b { display: grid; gap: 8px; font-size: .94rem; }
+.it-b .src { font-size: .8rem; color: var(--muted); }
+details.it > summary { flex-wrap: nowrap; } details.it > summary .it-t { flex: 1; }
+
+/* faixas de identificação: cada lado num cartão com nome fixo no topo ao rolar */
+.box, .reading { position: relative; }
+.band { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 1; margin: -12px -14px 10px; padding: 9px 14px; border-radius: 8px 8px 0 0; font-family: var(--f-body); font-size: .98rem; font-weight: 700; background: var(--ink); color: var(--bg); }
+.band small { display: block; font-weight: 400; font-size: .8rem; opacity: .85; }
+.band.acus { background: var(--acc-ink); color: var(--acc-bg); }
+.band.def { background: var(--def-ink); color: var(--def-bg); }
+.reading { padding: 12px 14px; }
+.reading .rt { font-size: 1rem; }
+@media (max-width: 720px) {
+  .two { gap: 20px; }
+  .tbl-wrap { overflow: visible; border: 0; background: none; border-radius: 0; }
+  .tbl-wrap table { min-width: 0; }
+  .tbl-wrap thead { display: none; }
+  .tbl-wrap table, .tbl-wrap tbody, .tbl-wrap tr, .tbl-wrap th, .tbl-wrap td { display: block; width: auto; }
+  .tbl-wrap tr { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+  .tbl-wrap tbody th { background: var(--ink); color: var(--bg); padding: 9px 12px; }
+  .tbl-wrap td { border-bottom: 1px solid var(--line); }
+  .tbl-wrap tr td:last-child { border-bottom: 0; }
+  .tbl-wrap td::before { content: attr(data-label); display: block; font-family: var(--f-mono); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">Projeto Casos · estudo 1</p>
+  <h1>Lula e Flávio: casos e acusações</h1>
+  <p class="lede">Todos os escândalos e acusações associados aos dois candidatos do 2º turno de 2026, com o desfecho de cada um. Os dois casos principais têm um estudo detalhado. A página não diz quem é culpado ou inocente: separa o que os tribunais decidiram, o que cada lado afirma e o que continua sem resposta.</p>
+</header>
+
+<main class="secs">
+<details class="sec" id="todos-flavio">
+  <summary class="sec-head"><h2>Todos os casos: Flávio Bolsonaro</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="resumo">Seis episódios. Um virou denúncia, rejeitada em 2022 depois que as provas foram anuladas. Um está em apuração. Nos outros quatro não há acusação formal contra ele.</p>
+  <div class="items">
+    <details class="sub it">
+      <summary><span class="it-t">Homenagens a um miliciano e parentes dele no gabinete<small>2003–2018</small><span class="st">sem acusação formal</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> como deputado estadual, Flávio propôs uma moção de louvor (2003) e a Medalha Tiradentes (2005) ao policial Adriano da Nóbrega, que recebeu a medalha enquanto estava preso, acusado de homicídio. Adriano foi depois apontado pelo MP do Rio como chefe do grupo de matadores de aluguel “Escritório do Crime” e morreu em 2020. A mãe e a ex-mulher dele trabalharam no gabinete de Flávio na Alerj.</p>
+        <p><b>Papel de Flávio:</b> nunca foi acusado de envolvimento com as atividades de Adriano. Os salários das duas parentes foram analisados dentro do caso das rachadinhas. Em 2026, ele disse que a homenagem foi dada quando Adriano era um policial reconhecido e o chamou de “injustiçado”.</p>
+        <p class="src">Fontes: A Tarde; Revista Fórum (reportagens, citando a Resolução da Alerj nº 931/2005).</p>
+      </div>
+    </details>
+    <details class="sub it">
+      <summary><span class="it-t">Rachadinhas na Alerj<small>2018–2022 · estudo detalhado</small><span class="st">denúncia rejeitada</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> suposta devolução de salários de funcionários do gabinete dele como deputado estadual, incluindo a suspeita de lavagem em uma loja de chocolates e em imóveis.</p>
+        <p><b>Desfecho:</b> denunciado em 2020; provas anuladas pelo STJ e pelo STF; denúncia rejeitada em 2022 a pedido do próprio MP. Nunca foi réu.</p>
+        <p><a href="#flavio">Ver o estudo completo deste caso</a></p>
+      </div>
+    </details>
+    <details class="sub it">
+      <summary><span class="it-t">Relatórios da Abin para a defesa<small>2020</small><span class="st">sem acusação formal</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> a revista Época revelou que a Abin, agência de inteligência do governo federal, teria produzido relatórios orientando a defesa de Flávio no caso das rachadinhas. Uma advogada dele confirmou ter recebido o material. O GSI e o então diretor da Abin, Alexandre Ramagem, negaram que a agência tenha produzido os relatórios.</p>
+        <p><b>Papel de Flávio:</b> não encontramos investigação aberta contra ele por isso. Ele diz ter sido vítima de acesso ilegal a seus dados na Receita Federal.</p>
+        <p class="src">Fontes: Poder360; CartaCapital; Metrópoles (reportagens).</p>
+      </div>
+    </details>
+    <details class="sub it">
+      <summary><span class="it-t">Financiamento do BRB para a casa em Brasília<small>2021 · apurado em 2026</small><span class="st st-on">em apuração</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> o BRB, banco público do Distrito Federal, financiou R$ 3,1 milhões da casa de cerca de R$ 6 milhões no Lago Sul, a 3,71% ao ano mais inflação, abaixo da média de cerca de 4,85% que o banco cobrava na época. Flávio quitou o empréstimo de 30 anos em cerca de três. É o maior item da declaração de bens dele ao TSE.</p>
+        <p><b>Situação:</b> segundo o jornal O Globo, em 2026 a Polícia Federal passou a analisar o contrato dentro da investigação sobre o Banco Master e o BRB. Não encontramos acusação formal contra ele nem a resposta da defesa.</p>
+        <p class="src">Fontes: Terra e TVT News, citando O Globo (reportagens).</p>
+      </div>
+    </details>
+    <details class="sub it">
+      <summary><span class="it-t">Banco Master e Daniel Vorcaro<small>2025–2026</small><span class="st">sem acusação formal</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> Flávio admitiu ter pedido recursos ao banqueiro Daniel Vorcaro, preso desde março de 2026 por suspeita de fraude bilionária no Banco Master, para um filme sobre Jair Bolsonaro. O dinheiro foi para um fundo ligado a um advogado. Uma reportagem citou um e-mail da PF que o apontaria como “usuário master” da conta de uma empresa ligada a Vorcaro; ele nega.</p>
+        <p><b>Situação:</b> não encontramos denúncia ou investigação formal contra ele. Em 2026, a Justiça do DF mandou remover uma publicação falsa que dizia haver mandado de prisão contra ele por esse caso.</p>
+        <p class="src">Fontes: O Tempo; Correio Braziliense; Brasil de Fato (reportagens).</p>
+      </div>
+    </details>
+    <details class="sub it">
+      <summary><span class="it-t">Operação “Unha e Carne” e facções<small>2026</small><span class="st">não é investigado</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> políticos do PT publicaram conteúdo associando Flávio a facções criminosas a partir de uma operação da Polícia Federal chamada “Unha e Carne”.</p>
+        <p><b>Situação:</b> em junho de 2026, o TSE mandou remover as publicações. A ministra Estela Aranha registrou que Flávio não aparece na operação como investigado, indiciado ou denunciado.</p>
+        <p class="src">Fonte: <a href="https://www.tse.jus.br/comunicacao/noticias/2026/Junho/tse-determina-remocao-de-publicacao-em-diversos-perfis-que-associam-flavio-bolsonaro-a-faccoes-criminosas" target="_blank" rel="noopener">notícia do TSE</a> (oficial).</p>
+      </div>
+    </details>
+  </div>
+  </div>
+</details>
+
+<details class="sec" id="todos-lula">
+  <summary class="sec-head"><h2>Todos os casos: Lula</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="resumo">Dezesseis episódios. Duas condenações, ambas anuladas. Nos demais processos houve absolvição, anulação, rejeição da denúncia, arquivamento ou trancamento. No mensalão ele nunca foi denunciado, e em dois casos recentes, que envolvem o irmão e um filho, ele não é investigado.</p>
+  <div class="items">
+    <details class="sub it">
+      <summary><span class="it-t">Mensalão<small>2005</small><span class="st">nunca denunciado</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> esquema de pagamentos a deputados da base do governo, revelado em 2005, no primeiro mandato de Lula. Em 2012, o STF condenou ex-ministros e dirigentes do PT, entre eles José Dirceu (Ação Penal 470).</p>
+        <p><b>Papel de Lula:</b> nunca foi denunciado. O Ministério Público concluiu na época que não havia indícios contra ele, e em 2010 o STF manteve, por unanimidade, Lula fora da lista de réus. Em 2012, o operador Marcos Valério o acusou em depoimento. As acusações foram para a primeira instância: uma parte foi arquivada por prescrição (2013) e a apuração sobre a Portugal Telecom teve arquivamento pedido em 2015 e foi reaberta em 2017. Não encontramos o desfecho final.</p>
+        <p class="src">Fontes: Conjur (2010, 2013); Congresso em Foco; CartaCapital (reportagens).</p>
+      </div>
+    </details>
+    <details class="sub it">
+      <summary><span class="it-t">Tríplex do Guarujá<small>Lava Jato · estudo detalhado</small><span class="st">condenação anulada</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> apartamento que, segundo a acusação, a OAS reservou e reformou para a família de Lula em troca de contratos na Petrobras.</p>
+        <p><b>Desfecho:</b> condenado em três instâncias e preso (2018–2019); condenação anulada pelo STF em 2021 (juiz incompetente e parcial); prescrito em 2022.</p>
+        <p><a href="#lula">Ver o estudo completo deste caso</a></p>
+      </div>
+    </details>
+    <details class="sub it">
+      <summary><span class="it-t">Sítio de Atibaia<small>Lava Jato · estudo detalhado</small><span class="st">condenação anulada</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> reformas num sítio usado pela família de Lula, pagas por Odebrecht, OAS e Schahin, segundo a acusação.</p>
+        <p><b>Desfecho:</b> condenado em duas instâncias (2019); condenação anulada pelo STF em 2021; a nova denúncia foi rejeitada no DF.</p>
+        <p><a href="#lula">Ver o estudo completo deste caso</a></p>
+      </div>
+    </details>
+    <details class="sub it">
+      <summary><span class="it-t">Terreno e doações ao Instituto Lula<small>Lava Jato</small><span class="st">anulado</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> dois processos. Um acusava a Odebrecht de comprar um terreno para o Instituto Lula como propina; o outro dizia que doações de empresas ao Instituto (2011–2015) eram propina ou caixa 2.</p>
+        <p><b>Desfecho:</b> os atos foram anulados pelo STF na mesma decisão que tirou os casos de Curitiba (2021).</p>
+        <p class="src">Fonte: O Povo, levantamento de set/2021 (reportagem).</p>
+      </div>
+    </details>
+    <details class="sub it">
+      <summary><span class="it-t">“Quadrilhão do PT”<small>organização criminosa</small><span class="st">absolvido</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> acusação de chefiar uma organização criminosa para desviar recursos da Petrobras e de outras estatais.</p>
+        <p><b>Desfecho:</b> absolvido pela 12ª Vara Federal de Brasília. Uma segunda denúncia no mesmo sentido foi rejeitada.</p>
+        <p class="src">Fonte: O Povo, levantamento de set/2021 (reportagem).</p>
+      </div>
+    </details>
+    <details class="sub it">
+      <summary><span class="it-t">Obstrução de Justiça (caso Delcídio)<small>2016–2018</small><span class="st">absolvido</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> acusação, baseada na delação do ex-senador Delcídio do Amaral, de tentar comprar o silêncio de um delator da Lava Jato.</p>
+        <p><b>Desfecho:</b> absolvido pela 10ª Vara Federal de Brasília, sem recurso da acusação.</p>
+        <p class="src">Fonte: O Povo, levantamento de set/2021 (reportagem).</p>
+      </div>
+    </details>
+    <details class="sub it">
+      <summary><span class="it-t">Medida provisória das montadoras<small>Operação Zelotes</small><span class="st">absolvido</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> suspeita de que a edição da MP 471, que prorrogou incentivos à indústria automobilística, teve contrapartida.</p>
+        <p><b>Desfecho:</b> absolvido pela 10ª Vara Federal de Brasília, depois que o próprio MPF pediu a absolvição.</p>
+        <p class="src">Fonte: O Povo, levantamento de set/2021 (reportagem).</p>
+      </div>
+    </details>
+    <details class="sub it">
+      <summary><span class="it-t">Palestras pagas<small>2011–2015</small><span class="st">arquivado</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> inquérito sobre 72 palestras pagas por empresas, suspeitas de encobrir propina.</p>
+        <p><b>Desfecho:</b> arquivado; a Justiça Federal do Paraná reconheceu que as palestras foram feitas.</p>
+        <p class="src">Fonte: O Povo, levantamento de set/2021 (reportagem).</p>
+      </div>
+    </details>
+    <details class="sub it">
+      <summary><span class="it-t">Outros processos ligados à Lava Jato<small>cinco casos</small><span class="st">encerrados</span></span></summary>
+      <div class="it-b">
+        <ul class="pts">
+          <li><b>Angola e BNDES:</b> contratação da empresa de um sobrinho em obra da Odebrecht. Ação penal trancada pelo TRF1 (denúncia considerada inepta).</li>
+          <li><b>Guiné Equatorial:</b> doação ao Instituto Lula de empresa que atuava no país. Ação penal trancada pelo TRF3.</li>
+          <li><b>Costa Rica:</b> suposto tráfico de influência em favor da OAS. Investigação trancada por falta de provas.</li>
+          <li><b>Irmão Frei Chico e a Odebrecht:</b> suposto favorecimento em negociações sindicais. Denúncia rejeitada.</li>
+          <li><b>Empresa do filho Luís Cláudio:</b> acusação envolvendo a empresa de eventos esportivos dele. Denúncia rejeitada.</li>
+        </ul>
+        <p class="src">Fonte: O Povo, levantamento de set/2021 (reportagem; o texto tem tom favorável a Lula, e as decisões ainda não foram conferidas uma a uma).</p>
+      </div>
+    </details>
+    <details class="sub it">
+      <summary><span class="it-t">Fraude nos descontos do INSS<small>2025–2026 · envolve o irmão</small><span class="st">não é investigado</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> descontos de associações em aposentadorias sem autorização dos aposentados, alvo da Operação Sem Desconto (2025). O Sindnapi, sindicato do qual o irmão de Lula, Frei Chico, é vice-presidente, descontou R$ 599,5 milhões em dez anos, segundo a CPMI do INSS. Em 2026 a Justiça bloqueou até R$ 562 milhões do sindicato.</p>
+        <p><b>Papel de Lula:</b> não é investigado. Frei Chico foi citado no relatório final da CPMI, mas não foi indiciado.</p>
+        <p class="src">Fontes: Metrópoles; Jornal de Brasília; SBT News (reportagens, out/2026).</p>
+      </div>
+    </details>
+    <details class="sub it">
+      <summary><span class="it-t">Inquéritos sobre o filho Lulinha<small>2025–2026</small><span class="st st-on">em investigação</span></span></summary>
+      <div class="it-b">
+        <p><b>Do que se trata:</b> o filho mais velho de Lula, Fábio Luís, é investigado pela PF em três inquéritos no STF, por suspeita de tráfico de influência. Um deles apura se ele ajudou uma empresa ligada ao lobista conhecido como “Careca do INSS” a conseguir contratos no Ministério da Saúde.</p>
+        <p><b>Situação:</b> Lulinha nega irregularidades e não foi denunciado. A PF pediu mais prazo ao STF. Lula não é investigado nesses inquéritos.</p>
+        <p class="src">Fontes: CNN Brasil; Poder360; Metrópoles (reportagens).</p>
+      </div>
+    </details>
+  </div>
+  </div>
+</details>
+
+<details class="sec" id="lado-a-lado">
+  <summary class="sec-head"><h2>Os dois casos principais lado a lado</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Fato</p>
+  <p class="resumo">Os dois casos caíram sem que nenhum tribunal julgasse se houve crime, e em ambos foi o próprio Ministério Público que pediu o encerramento.</p>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Pergunta</th><th>Flávio Bolsonaro</th><th>Lula</th></tr></thead>
+      <tbody>
+        <tr><th>Do que era acusado</th><td data-label="Flávio Bolsonaro">Caso das “rachadinhas”: devolução de parte do salário de funcionários do gabinete dele na Alerj, quando era deputado estadual (2007–2018). Crimes apontados: peculato, lavagem de dinheiro, apropriação indébita e organização criminosa</td><td data-label="Lula">Dois processos: o do tríplex do Guarujá (apartamento reservado e reformado pela OAS) e o do sítio de Atibaia (reformas pagas por empreiteiras). Segundo a acusação, eram vantagens em troca de contratos na Petrobras durante o governo dele. Crimes apontados: corrupção passiva e lavagem de dinheiro</td></tr>
+        <tr><th>Chegou a ser condenado?</th><td data-label="Flávio Bolsonaro">Não. A denúncia foi rejeitada antes de virar processo</td><td data-label="Lula">Sim. Tríplex: em 1ª instância, no TRF4 e no STJ. Sítio: em 1ª instância e no TRF4</td></tr>
+        <tr><th>Foi preso?</th><td data-label="Flávio Bolsonaro">Não (o ex-assessor Fabrício Queiroz foi, em 2020)</td><td data-label="Lula">Sim, de abril de 2018 a novembro de 2019</td></tr>
+        <tr><th>Por que o caso caiu</th><td data-label="Flávio Bolsonaro">Provas anuladas (quebra de sigilo sem fundamentação, relatórios do Coaf obtidos de forma irregular) e juiz sem competência por causa do foro</td><td data-label="Lula">Juiz sem competência (o caso não deveria estar em Curitiba) e juiz parcial (Sergio Moro)</td></tr>
+        <tr><th>Algum tribunal julgou o mérito depois?</th><td data-label="Flávio Bolsonaro">Não</td><td data-label="Lula">Não</td></tr>
+        <tr><th>Quem pediu o encerramento</th><td data-label="Flávio Bolsonaro">O próprio Ministério Público do Rio</td><td data-label="Lula">O próprio Ministério Público Federal (tríplex)</td></tr>
+        <tr><th>Pode ser reaberto?</th><td data-label="Flávio Bolsonaro">Em tese sim, com provas novas e obtidas de forma válida, até prescrever</td><td data-label="Lula">Tríplex não: prescreveu. Sítio: a nova denúncia foi rejeitada</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Nos dois casos, a acusação nunca foi julgada por um processo que os tribunais superiores considerassem válido. Por isso os fatos jurídicos permitem duas leituras para cada um, e as duas torcidas usam o mesmo argumento em sentidos opostos.</p>
+</div>
+</details>
+
+<details class="sec" id="flavio">
+  <summary class="sec-head"><h2>Flávio Bolsonaro e as “rachadinhas” da Alerj</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Caso 1</p>
+  <p class="resumo">Denunciado em 2020. O STJ e o STF anularam as provas, e a denúncia foi rejeitada em 2022 a pedido do próprio Ministério Público. Nunca foi réu nem condenado.</p>
+  <p class="sec-desc">Investigação do Ministério Público do Rio sobre suposta devolução de salários de funcionários do gabinete de Flávio quando ele era deputado estadual. “Rachadinha” é o nome popular desse tipo de esquema.</p>
+
+  <details class="sub"><summary><span class="lv fato">fato</span>Linha do tempo (7 momentos)</summary>
+    <ol class="timeline">
+      <li><time>dez/2018</time>Um relatório do Coaf, órgão que monitora movimentações financeiras, aponta R$ 1,2 milhão em movimentações atípicas na conta de Fabrício Queiroz, ex-assessor de Flávio. <span class="src">Fonte: Conjur</span></li>
+      <li><time>jun/2020</time>Queiroz é preso em Atibaia (SP), num imóvel do então advogado da família Bolsonaro. Uma semana depois, o TJ do Rio decide, por 2 a 1, que o caso deve sair do juiz de 1ª instância e ir para o Órgão Especial do tribunal, por causa do foro de Flávio. <span class="src">Fonte: Conjur</span></li>
+      <li class="key"><time>out/2020</time>O MP do Rio denuncia Flávio, Queiroz e outras 15 pessoas. <span class="src">Fonte: Conjur</span></li>
+      <li class="key"><time>fev/2021</time>O STJ (5ª Turma) anula as quebras de sigilo bancário e fiscal por falta de fundamentação. O relator, Felix Fischer, ficou vencido. <span class="src">Fonte: Conjur</span></li>
+      <li class="key"><time>nov/2021</time>O STJ anula todas as decisões do juiz de 1ª instância, por entender que ele não podia atuar no caso. Dias depois, a 2ª Turma do STF anula 4 dos 5 relatórios do Coaf, por terem sido compartilhados antes de autorização judicial (HC 201.965). Só o relatório original, de R$ 1,2 milhão, foi mantido. <span class="src">Fontes: Conjur; notícia do STF</span></li>
+      <li class="key"><time>mai/2022</time>A pedido do próprio MP, sem as provas anuladas, o Órgão Especial do TJ do Rio rejeita a denúncia. <span class="src">Fontes: Conjur; Agência Brasil</span></li>
+      <li><time>fev/2025</time>O ministro Gilmar Mendes (STF) nega recurso do MP para reabrir o caso. Afirma que as anulações não impedem uma nova denúncia com outras provas. <span class="src">Fonte: Poder360</span></li>
+    </ol>
+  </details>
+
+  <details class="sub"><summary><span class="lv acus">acusação</span><span class="lv def">defesa</span>O que cada lado afirmava</summary>
+    <div class="two">
+    <div class="box acus">
+      <h4 class="band acus">O que o MP do Rio afirmava<small>denúncia de out/2020</small></h4>
+      <ul class="pts">
+        <li>Funcionários do gabinete devolviam parte do salário. Queiroz recolhia o dinheiro, e Flávio comandava o esquema.</li>
+        <li>Cerca de R$ 2,1 milhões foram depositados por assessores nas contas de Queiroz entre 2007 e 2018.</li>
+        <li>O dinheiro teria sido lavado em uma loja de chocolates de Flávio, que recebeu 1.512 depósitos em dinheiro vivo entre 2015 e 2018, e em compras de imóveis pagas em espécie.</li>
+        <li>O valor total atribuído ao esquema foi de cerca de R$ 6,1 milhões.</li>
+      </ul>
+      <p class="src small">A maior parte desses números vinha de provas depois anuladas. Fontes: Conjur, Revista Fórum, CartaCapital.</p>
+    </div>
+    <div class="box def">
+      <h4 class="band def">O que Flávio e a defesa afirmavam</h4>
+      <ul class="pts">
+        <li>A acusação “se mostra inviável”, por não ter indício de prova.</li>
+        <li>A investigação teve ilegalidades: quebra de sigilo sem fundamentação, juiz sem competência e dados do Coaf obtidos por “encomenda” do MP. STJ e STF concordaram com esses pontos.</li>
+        <li>Em 2018, Queiroz disse que as movimentações vinham da compra e venda de carros.</li>
+        <li>Flávio afirmou que a investigação buscava atingir o governo do pai.</li>
+      </ul>
+      <p class="src small">Fontes: Conjur; notícia do STF.</p>
+    </div>
+    </div>
+  </details>
+
+  <div class="block">
+    <h3><span class="lv int">interpretação</span>Duas leituras dos mesmos fatos</h3>
+    <div class="two">
+      <div class="reading"><h4 class="band">Leitura 1</h4><p class="rt"><b>foi alvo de uma investigação irregular</b></p><p class="small">Nunca foi condenado nem chegou a ser réu. Dois tribunais superiores reconheceram ilegalidades na coleta de provas. O próprio MP pediu o encerramento e, em mais de quatro anos, não apresentou nova denúncia.</p></div>
+      <div class="reading"><h4 class="band">Leitura 2</h4><p class="rt"><b>escapou por questões processuais</b></p><p class="small">As anulações trataram da forma de obter as provas, não do que elas mostravam. O relatório do Coaf de R$ 1,2 milhão continua válido. O STF afirmou que nada impede nova denúncia. A decisão de 2020 que mandou o caso para o Órgão Especial foi questionada por contrariar o entendimento do STF, de 2018, que limitou o foro.</p></div>
+    </div>
+  </div>
+
+  <div class="block open">
+    <h3>Perguntas sem resposta</h3>
+    <ul class="pts">
+      <li>As movimentações têm explicação legal? Nenhum tribunal examinou isso.</li>
+      <li>Por que o MP do Rio não apresentou nova denúncia com provas obtidas de forma válida? Não encontramos manifestação oficial sobre isso.</li>
+      <li>Qual é o prazo de prescrição dos fatos mais recentes (2018)? Ainda não calculado.</li>
+    </ul>
+  </div>
+</div>
+</details>
+
+<details class="sec" id="lula">
+  <summary class="sec-head"><h2>Lula, o tríplex do Guarujá e o sítio de Atibaia</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Caso 2</p>
+  <p class="resumo">Condenado em três instâncias e preso de 2018 a 2019. Em 2021 o STF anulou as condenações; em 2022 o caso do tríplex prescreveu.</p>
+  <p class="sec-desc">Dois processos da Operação Lava Jato em Curitiba. A acusação dizia que Lula recebeu vantagens de empreiteiras em troca de favorecê-las em contratos da Petrobras.</p>
+
+  <details class="sub"><summary><span class="lv fato">fato</span>Linha do tempo (10 momentos)</summary>
+    <ol class="timeline">
+      <li><time>mar/2016</time>Lula é levado para depor pela Polícia Federal (condução coercitiva) sem ter sido intimado antes. Esse fato foi citado depois pelo STF para declarar o juiz parcial. <span class="src">Fonte: voto do ministro Gilmar Mendes</span></li>
+      <li><time>set/2016</time>O MPF denuncia Lula no caso do tríplex. <span class="src">Fonte: Exame</span></li>
+      <li class="key"><time>jul/2017</time>O juiz Sergio Moro condena Lula a 9 anos e 6 meses no caso do tríplex. Na mesma sentença, o absolve da acusação sobre a guarda do acervo presidencial. <span class="src">Fonte: Poder360</span></li>
+      <li class="key"><time>jan/2018</time>O TRF4 confirma a condenação por unanimidade e aumenta a pena para 12 anos e 1 mês. Pela Lei da Ficha Limpa, Lula fica inelegível. <span class="src">Fonte: Bem Paraná</span></li>
+      <li><time>abr/2018 – nov/2019</time>Lula fica preso. É solto quando o STF decide que a pena só pode ser cumprida depois de esgotados todos os recursos (ADCs 43, 44 e 54).</li>
+      <li><time>nov/2018</time>Moro aceita ser ministro da Justiça do governo Bolsonaro.</li>
+      <li class="key"><time>fev–nov/2019</time>Sítio: a juíza Gabriela Hardt condena Lula a 12 anos e 11 meses (fev). O TRF4 confirma por unanimidade e aumenta para 17 anos e 1 mês (nov). Tríplex: o STJ mantém a condenação e reduz a pena para 8 anos e 10 meses (abr). <span class="src">Fontes: Exame; Congresso em Foco; Diário do Nordeste</span></li>
+      <li class="key"><time>mar–abr/2021</time>O ministro Edson Fachin anula as condenações porque a vara de Curitiba não era a competente: os fatos não se ligavam só à Petrobras (HC 193.726). O plenário confirma por 8 a 3, e os casos vão para a Justiça Federal do DF. <span class="src">Fonte: Jovem Pan</span></li>
+      <li class="key"><time>mar–jun/2021</time>A 2ª Turma do STF declara Moro parcial no caso do tríplex, por 3 a 2 (HC 164.493). O plenário mantém por 7 a 4, e o efeito é estendido a outros processos de Lula. <span class="src">Fontes: notícias do STF; Poder360</span></li>
+      <li class="key"><time>2021 – jan/2022</time>No DF, a nova denúncia do sítio é rejeitada. O caso do tríplex é arquivado por prescrição, a pedido do MPF: como Lula tem mais de 70 anos, o prazo cai pela metade, e a anulação apagou os marcos que interrompiam a contagem. <span class="src">Fontes: Congresso em Foco; Agência Brasil</span></li>
+    </ol>
+  </details>
+
+  <details class="sub"><summary><span class="lv acus">acusação</span><span class="lv def">defesa</span>O que cada lado afirmava</summary>
+    <div class="two">
+    <div class="box acus">
+      <h4 class="band acus">O que o MPF afirmava<small>tríplex</small></h4>
+      <ul class="pts">
+        <li>A OAS reservou e reformou um tríplex no Guarujá para a família de Lula. A sentença de Moro fixou a vantagem em cerca de R$ 2,2 milhões, em troca de contratos na Petrobras.</li>
+        <li>O ex-presidente da OAS, Léo Pinheiro, disse em depoimento que a reserva foi pedida para a “família do presidente Lula” e que Lula pediu para o imóvel não ser posto em seu nome.</li>
+        <li>Também foram apresentados documentos apreendidos, mensagens do celular de Léo Pinheiro, e-mails e registros de visitas da família ao imóvel.</li>
+        <li>No sítio, a acusação dizia que Odebrecht, OAS e Schahin pagaram reformas num imóvel registrado em nome do filho de um amigo de Lula, usado pela família.</li>
+      </ul>
+      <p class="src small">Fontes: Exame; Poder360; Gazeta do Povo.</p>
+    </div>
+    <div class="box def">
+      <h4 class="band def">O que Lula e a defesa afirmavam</h4>
+      <ul class="pts">
+        <li>Lula nunca foi dono nem teve a posse do tríplex. Segundo a defesa, o imóvel era da OAS e foi dado como garantia de um empréstimo. Lula esteve lá uma vez e recusou a compra.</li>
+        <li>O caso não tinha relação com a Petrobras e nunca deveria ter sido julgado em Curitiba. O STF concordou.</li>
+        <li>Moro agiu como parte, e não como juiz. O STF concordou. A defesa também cita mensagens entre juiz e procuradores divulgadas a partir de 2019 (“Vaza Jato”).</li>
+      </ul>
+      <p class="src small">Fontes: Exame; nota da defesa; Conjur.</p>
+    </div>
+    </div>
+  </details>
+
+  <details class="sub"><summary><span class="lv fato">fato</span>O que o STF disse sobre a parcialidade de Moro</summary>
+    <p class="small">Segundo o voto vencedor e a decisão de extensão do ministro Gilmar Mendes, a parcialidade apareceu em fatos como a condução coercitiva sem intimação prévia (2016), a atuação de Moro, de férias e sem jurisdição sobre o pedido, para impedir uma ordem de soltura dada por um desembargador de plantão (2018), e a divulgação da delação de Antonio Palocci durante a campanha de 2018. O ministro afirmou que a conclusão vinha dos fatos já apresentados no pedido original, sem depender das mensagens da “Vaza Jato”, cuja forma de obtenção era questionada.</p>
+  </details>
+
+  <div class="block">
+    <h3><span class="lv int">interpretação</span>Duas leituras dos mesmos fatos</h3>
+    <div class="two">
+      <div class="reading"><h4 class="band">Leitura 1</h4><p class="rt"><b>foi perseguido e o processo era viciado</b></p><p class="small">O STF considerou o juiz parcial e o tribunal errado. Ele nunca foi o dono formal do imóvel. Depois da anulação, nenhum tribunal voltou a condená-lo, e o próprio MPF pediu o arquivamento. O juiz do caso virou ministro do adversário político dele.</p></div>
+      <div class="reading"><h4 class="band">Leitura 2</h4><p class="rt"><b>era culpado e escapou por questões processuais</b></p><p class="small">Antes da anulação, a condenação do tríplex foi confirmada por unanimidade em dois tribunais, e a do sítio em um. O STF não reexaminou as provas. O caso prescreveu porque o processo voltou à estaca zero e o prazo é menor para quem tem mais de 70 anos.</p></div>
+    </div>
+  </div>
+
+  <div class="block open">
+    <h3>Perguntas sem resposta</h3>
+    <ul class="pts">
+      <li>As provas reunidas levariam a uma condenação num processo conduzido por um juiz considerado imparcial? Esse julgamento nunca aconteceu, e com a prescrição não vai acontecer.</li>
+      <li>O que as mensagens da “Vaza Jato” mostram de fato? Elas não foram a base da decisão do STF, e a autenticidade foi contestada por Moro e pelos procuradores.</li>
+      <li>Os outros processos e investigações contra Lula ligados à Lava Jato tiveram desfechos de que tipo (absolvição, anulação, arquivamento)? Ainda não levantados neste estudo.</li>
+    </ul>
+  </div>
+</div>
+</details>
+</main>
+
+<p class="group-label" id="para-entender">Para entender: como ler um caso e de onde vêm os dados</p>
+
+<div class="secs" role="region" aria-label="Para entender">
+<details class="sec" id="criterio">
+  <summary class="sec-head"><h2>Como a lista foi montada</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="resumo">O mesmo critério para os dois candidatos.</p>
+  <ul class="pts">
+    <li><b>Entra</b> todo episódio em que o candidato foi investigado, denunciado, réu ou condenado, e todo escândalo amplamente noticiado que envolva diretamente o governo, o gabinete ou a campanha dele, mesmo sem acusação contra ele.</li>
+    <li><b>Parentes</b> entram só quando o caso toca o governo ou o gabinete do candidato. Por isso os processos de Jair Bolsonaro, que não envolvem o mandato de Flávio, ficaram de fora.</li>
+    <li><b>Ficou de fora</b> o caso Ana Clara: Flávio atuou como advogado de um policial acusado da morte de uma criança, mas não há acusação contra ele.</li>
+    <li><b>O tamanho das listas</b> reflete trajetórias diferentes. Lula governou o país por três mandatos e foi o principal alvo da Lava Jato. Flávio teve mandatos estaduais e no Senado. Ter mais ou menos episódios não indica, sozinho, mais ou menos culpa: a maior parte terminou sem julgamento do mérito, para os dois.</li>
+    <li><b>Situação</b> é a última informação encontrada até 22/10/2026. Pode ter mudado.</li>
+  </ul>
+  </div>
+</details>
+
+<details class="sec" id="como-ler">
+  <summary class="sec-head"><h2>Como ler um caso</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Para entender</p>
+  <p class="resumo">Quatro etiquetas (fato, acusação, defesa, interpretação) e quatro palavras que não são a mesma coisa: absolvição, anulação, prescrição e arquivamento.</p>
+  <p class="sec-desc">Cada trecho tem uma etiqueta dizendo o que ele é. A diferença entre essas etiquetas é o ponto central deste estudo.</p>
+  <div class="grid4">
+    <div><span class="lv fato">fato</span><b>Ato oficial</b><span>Uma denúncia, uma decisão ou uma prisão que aconteceu, com data e fonte.</span></div>
+    <div><span class="lv acus">acusação</span><b>O que a acusação afirmava</b><span>A versão do Ministério Público. Não foi julgada no mérito.</span></div>
+    <div><span class="lv def">defesa</span><b>O que a defesa afirmava</b><span>A versão do acusado e dos advogados. Também não foi julgada no mérito.</span></div>
+    <div><span class="lv int">interpretação</span><b>Leituras possíveis</b><span>Como cada lado junta os fatos, apresentada na versão mais forte de cada um.</span></div>
+  </div>
+  <div class="grid4">
+    <div><b>Absolvição</b><span>O juiz examina as provas e conclui que não houve crime, ou que não há prova suficiente.</span></div>
+    <div><b>Anulação</b><span>Um tribunal desfaz decisões por erro no processo: juiz errado, juiz parcial ou prova obtida de forma ilegal. Os fatos não são julgados.</span></div>
+    <div><b>Prescrição</b><span>O Estado perde o prazo para punir, e o caso acaba sem dizer se houve crime. Para quem tem mais de 70 anos, o prazo cai pela metade (Código Penal, art. 115).</span></div>
+    <div><b>Arquivamento ou rejeição</b><span>O caso é encerrado sem julgamento. Pode ser reaberto com provas novas e válidas, enquanto não prescrever.</span></div>
+  </div>
+</div>
+</details>
+
+<details class="sec" id="limites">
+  <summary class="sec-head"><h2>O que este estudo ainda não faz</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Limites desta versão</p>
+  <p class="resumo">Faltam os documentos originais, duas fontes de datas e os outros processos de cada um.</p>
+  <ul class="pts">
+    <li><b>Ler os documentos originais.</b> A maior parte dos fatos vem de reportagens sobre as decisões, além de notícias e do voto publicados pelo próprio STF. Os próximos passos são a denúncia do MP do Rio, a sentença de Moro, os acórdãos do STF e do STJ e as certidões que cada candidato entregou ao TSE.</li>
+    <li><b>As datas da prisão de Lula e da posse de Moro como ministro</b> são fatos amplamente registrados, mas ainda estão sem fonte anexada aqui.</li>
+    <li><b>Lista de todos os casos.</b> Quase toda baseada em reportagens. Os processos antigos de Lula vêm em boa parte de um levantamento do jornal O Povo (2021), com tom favorável a ele, e as decisões ainda não foram conferidas uma a uma. Do mensalão, falta o desfecho da investigação reaberta em 2017.</li>
+    <li><b>Estudo detalhado.</b> Só os dois casos principais têm o roteiro completo (acusação, defesa, decisões, leituras). Os outros podem ganhar o mesmo tratamento depois.</li>
+    <li><b>Pode faltar algum episódio menor.</b> A lista é aberta a acréscimos, sempre com o mesmo critério para os dois.</li>
+  </ul>
+</div>
+</details>
+
+<details class="sec" id="fontes">
+  <summary class="sec-head"><h2>Fontes</h2><span class="icon" aria-hidden="true"></span></summary>
+  <div class="sec-body">
+  <p class="eyebrow">Referências</p>
+  <p class="resumo">Todas as fontes, oficiais e reportagens, com link.</p>
+  <p class="small">Versão 2 · consulta em 21 e 22/10/2026 · ordem alfabética do nome de urna.</p>
+  <p><b>Fontes da lista de todos os casos</b> (reportagens, exceto a do TSE)</p>
+  <ul>
+    <li>Flávio: <a href="https://atarde.com.br/politica/homenagens-e-emendas-entenda-o-historico-de-flavio-bolsonaro-com-milicianos-1406276" target="_blank" rel="noopener">A Tarde, homenagens</a>; <a href="https://revistaforum.com.br/politica/flavio-adrinao-nobrega/" target="_blank" rel="noopener">Revista Fórum, Adriano da Nóbrega</a>; <a href="https://www.poder360.com.br/governo/abin-produziu-relatorios-para-defender-flavio-bolsonaro-no-caso-queiroz/" target="_blank" rel="noopener">Poder360, Abin</a>; <a href="https://www.cartacapital.com.br/carta-capital/advogada-de-flavio-bolsonaro-assume-recebimento-de-relatorio-da-abin/" target="_blank" rel="noopener">CartaCapital, Abin</a>; <a href="https://www.metropoles.com/brasil/politica-brasil/ramagem-e-flavio-bolsonaro-negam-relatorio-da-abin-em-favor-do-senador" target="_blank" rel="noopener">Metrópoles, negativa da Abin</a>; <a href="https://www.terra.com.br/noticias/brasil/politica/pf-investiga-emprestimo-de-r-31-milhoes-do-brb-a-flavio-bolsonaro-para-compra-de-mansao-diz-revista,b6dd5bc379d8314996ebdcb78567e0204w27bu4e.html" target="_blank" rel="noopener">Terra, financiamento do BRB</a>; <a href="https://tvtnews.com.br/pf-investiga-3-milhoes-brb-mansao-flavio-bolsonaro/" target="_blank" rel="noopener">TVT News, BRB</a>; <a href="https://www.otempo.com.br/canal-o-tempo/programas/primeira-analise/2026/5/15/caso-banco-master-flavio-bolsonaro-fala-sobre-dinheiro-de-vorcaro-e-filme-primeira-analise" target="_blank" rel="noopener">O Tempo, Vorcaro</a>; <a href="https://www.correiobraziliense.com.br/politica/2026/10/7520676-flavio-bolsonaro-era-usuario-master-em-conta-de-empresa-ligada-a-vorcaro.html" target="_blank" rel="noopener">Correio Braziliense, Vorcaro</a>; <a href="https://www.brasildefato.com.br/2026/08/20/sem-explicar-dinheiro-de-vorcaro-e-do-banco-master-flavio-bolsonaro-diz-que-dark-horse-e-pagina-virada/" target="_blank" rel="noopener">Brasil de Fato, Vorcaro</a>; <a href="https://www.tse.jus.br/comunicacao/noticias/2026/Junho/tse-determina-remocao-de-publicacao-em-diversos-perfis-que-associam-flavio-bolsonaro-a-faccoes-criminosas" target="_blank" rel="noopener">TSE, publicações removidas</a> (oficial).</li>
+    <li>Lula: <a href="https://www.conjur.com.br/2010-abr-08/ministros-stf-mantem-lula-fora-lista-reus-mensalao/" target="_blank" rel="noopener">Conjur, mensalão (2010)</a>; <a href="https://conjur.com.br/2013-fev-07/gurgel-envia-acusacao-lula-ministerio-publico-minas-gerais/" target="_blank" rel="noopener">Conjur, depoimento de Valério (2013)</a>; <a href="https://www.congressoemfoco.com.br/amp/noticia/67611/jornais-mpf-abre-6-investigacoes-apos-denuncias-de-valerio" target="_blank" rel="noopener">Congresso em Foco, investigações abertas</a>; <a href="https://www.opovo.com.br/noticias/politica/2021/09/20/lula-acumula-19-vitorias-judiciais-em-processos-da-lava-jato-confira-decisoes.html" target="_blank" rel="noopener">O Povo, levantamento dos processos (2021)</a>; <a href="https://www.metropoles.com/sao-paulo/inss-mpf-apura-se-andrei-vazou-informacoes-sigilosas-sobre-irmao-de-lula" target="_blank" rel="noopener">Metrópoles, INSS e Frei Chico</a>; <a href="https://jornaldebrasilia.com.br/noticias/politica-e-poder/procuradoria-investiga-se-chefe-da-pf-divulgou-dados-sigilosos-sobre-irmao-de-lula-no-caso-inss/" target="_blank" rel="noopener">Jornal de Brasília, INSS</a>; <a href="https://www.cnnbrasil.com.br/politica/entenda-os-tres-inqueritos-em-que-lulinha-e-investigado/" target="_blank" rel="noopener">CNN Brasil, Lulinha</a>; <a href="https://www.poder360.com.br/poder-justica/entenda-a-investigacao-da-pf-sobre-lulinha-e-trafico-de-influencia/" target="_blank" rel="noopener">Poder360, Lulinha</a>.</li>
+  </ul>
+  <p><b>Fontes oficiais</b></p>
+  <ul>
+    <li>STF: <a href="https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=462854&amp;ori=1" target="_blank" rel="noopener">2ª Turma reconhece parcialidade de Moro</a>; <a href="https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=468184&amp;ori=1" target="_blank" rel="noopener">suspeição estendida a outras ações</a>; <a href="https://www.stf.jus.br/arquivo/cms/noticiaNoticiaStf/anexo/HC164493.pdf" target="_blank" rel="noopener">decisão de extensão no HC 164.493</a>; <a href="https://noticias.stf.jus.br/postsnoticias/2a-turma-decide-que-provas-contra-flavio-bolsonaro-no-caso-das-chamadas-rachadinhas-sao-ilegais/" target="_blank" rel="noopener">2ª Turma declara ilegais provas contra Flávio</a>.</li>
+    <li>Voto do ministro Gilmar Mendes no HC 164.493, <a href="https://static.poder360.com.br/2021/03/voto-Gilmar-Mendes-suspeicao-de-Moro.pdf" target="_blank" rel="noopener">resumo publicado pelo Poder360</a>.</li>
+  </ul>
+  <p><b>Reportagens</b> (fonte secundária)</p>
+  <ul>
+    <li>Caso Flávio: Conjur sobre <a href="https://conjur.com.br/2018-dez-26/fabricio-queiroz-dinheiro-vem-comercio-carros/" target="_blank" rel="noopener">explicação de Queiroz</a> (2018), <a href="https://conjur.com.br/2020-jun-25/tj-rj-acata-hc-flavio-joga-processo-orgao-especial/" target="_blank" rel="noopener">foro no TJ-RJ</a> (2020), <a href="https://conjur.com.br/2020-nov-04/mp-denuncia-flavio-bolsonaro-esquema-rachadinha-alerj/" target="_blank" rel="noopener">denúncia</a> (2020), <a href="https://conjur.com.br/2021-fev-23/stj-anula-quebra-sigilo-flavio-bolsonaro-rachadinha/" target="_blank" rel="noopener">STJ e a quebra de sigilo</a> (fev/2021), <a href="https://conjur.com.br/2021-nov-09/stj-anula-atos-juiz-flavio-bolsonaro-rachadinhas/" target="_blank" rel="noopener">STJ e os atos do juiz</a> (nov/2021), <a href="https://conjur.com.br/2022-mai-16/tj-rj-arquiva-denuncia-flavio-bolsonaro-rachadinha/" target="_blank" rel="noopener">arquivamento</a> (2022); <a href="https://agenciabrasil.ebc.com.br/politica/noticia/2022-05/justica-do-rio-arquiva-processo-de-caso-de-supostas-rachadinhas" target="_blank" rel="noopener">Agência Brasil</a> (2022); <a href="https://www.poder360.com.br/poder-justica/gilmar-nega-pedido-para-reabrir-acao-contra-flavio-por-rachadinha/" target="_blank" rel="noopener">Poder360</a> (2025); <a href="https://revistaforum.com.br/politica/loja-chocolates-flavio-relembre-esquema/" target="_blank" rel="noopener">Revista Fórum</a> e <a href="https://www.cartacapital.com.br/politica/o-que-aconteceu-com-o-caso-da-rachadinha-de-flavio-bolsonaro-suposto-candidato-em-2026/" target="_blank" rel="noopener">CartaCapital</a> (detalhes da denúncia).</li>
+    <li>Caso Lula: <a href="https://exame.com/brasil/as-acusacoes-contra-lula-no-caso-do-triplex-do-guaruja/" target="_blank" rel="noopener">Exame, acusações do tríplex</a>; <a href="https://www.poder360.com.br/eleicoes/lula-e-condenado-a-9-anos-e-6-meses-de-prisao-no-processo-do-triplex/" target="_blank" rel="noopener">Poder360, sentença</a> (2017); <a href="https://www.bemparana.com.br/noticias/politica/recursos-da-defesa-de-lula-sao-negados-por-unanimidade-em-porto-alegre/amp/" target="_blank" rel="noopener">Bem Paraná, TRF4</a> (2018); <a href="https://diariodonordeste.verdesmares.com.br/politica/stj-mantem-condenacao-de-lula-mas-decide-reduzir-pena-e-multa-1.2091031" target="_blank" rel="noopener">Diário do Nordeste, STJ</a> (2019); <a href="https://exame.com/brasil/lula-e-condenado-a-12-anos-e-11-meses-de-prisao-pelo-sitio-de-atibaia" target="_blank" rel="noopener">Exame, sítio</a> (2019); <a href="https://congressoemfoco.com.br/justica/por-unanimidade-trf4-confirma-condenacao-e-aumenta-pena-de-lula-no-caso-do-sitio" target="_blank" rel="noopener">Congresso em Foco, TRF4 sítio</a> (2019); <a href="https://jovempan.com.br/politica/stf-forma-maioria-pela-anulacao-das-condenacoes-de-lula/" target="_blank" rel="noopener">Jovem Pan, plenário do STF</a> (2021); <a href="https://www.poder360.com.br/justica/stf-mantem-decisao-que-declarou-moro-parcial-no-caso-triplex/" target="_blank" rel="noopener">Poder360, suspeição no plenário</a> (2021); <a href="https://conjur.com.br/2021-mar-09/gilmar-vota-considerar-moro-suspeito-anular-acao-triplex/" target="_blank" rel="noopener">Conjur, voto de Gilmar</a> (2021); <a href="https://congressoemfoco.com.br/justica/justica-de-brasilia-rejeita-denuncia-contra-lula-no-caso-do-sitio-de-atibaia" target="_blank" rel="noopener">Congresso em Foco, sítio no DF</a>; <a href="https://agenciabrasil.ebc.com.br/geral/noticia/2022-01/justica-federal-arquiva-caso-do-triplex-contra-lula" target="_blank" rel="noopener">Agência Brasil, prescrição do tríplex</a> (2022); <a href="https://pt.org.br/justica-encerra-de-vez-acao-do-triplex-contra-lula-leia-nota-da-defesa/" target="_blank" rel="noopener">nota da defesa</a> (publicada pelo PT).</li>
+  </ul>
+  <p>Este estudo faz parte do mesmo projeto da Ficha do 2º Turno 2026 e segue o mesmo método: mesmas perguntas para os dois, fonte em tudo e nenhuma recomendação de voto.</p>
+</div>
+</details>
+</div>
+
+</div>
+<script>
+(function(){
+  function openTarget(id){var el=id&&document.getElementById(id);if(!el)return;var d=el.closest('details');while(d){d.open=true;d=d.parentElement&&d.parentElement.closest('details');}}
+  document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(a)openTarget(a.getAttribute('href').slice(1));});
+  if(location.hash)openTarget(location.hash.slice(1));
+  var btn=document.getElementById('toggle-all');
+  if(btn)btn.addEventListener('click',function(){var all=[].slice.call(document.querySelectorAll('details.sec, details.sub'));var open=all.some(function(d){return !d.open;});all.forEach(function(d){d.open=open;});btn.textContent=open?'Fechar todas as seções':'Abrir todas as seções';});
+})();
+</script>
